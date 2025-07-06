@@ -37,19 +37,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.thompson@example.com",
-      href: "mailto:alex.thompson@example.com"
+      value: "Wipas.ananta@gmail.com",
+      href: "mailto:Wipas.ananta@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "098-958-6430",
+      href: "tel:0989586430"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bangkok, Thailand",
       href: null
     }
   ];
@@ -58,20 +58,14 @@ const ContactSection = () => {
     {
       icon: Github,
       name: "GitHub",
-      href: "https://github.com",
-      username: "@alexthompson"
+      href: "https://github.com/Wipas1919",
+      username: "@Wipas1919"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      href: "https://linkedin.com",
-      username: "Alex Thompson"
-    },
-    {
-      icon: Twitter,
-      name: "Twitter",
-      href: "https://twitter.com",
-      username: "@alexdev"
+      href: "https://www.linkedin.com/in/wipas-ananta",
+      username: "Wipas Anantamongkol"
     }
   ];
 
@@ -83,7 +77,7 @@ const ContactSection = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your next project or explore potential collaborations.
+            Ready to transform your data into insights? Let's discuss your analytics needs or explore potential collaborations.
           </p>
         </div>
 
@@ -235,14 +229,14 @@ const ContactSection = () => {
           <h4 className="text-xl font-semibold mb-6">I'm interested in:</h4>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Full-stack Web Applications",
-              "E-commerce Solutions",
-              "API Development",
-              "Technical Consulting",
-              "Code Reviews",
-              "Team Leadership",
-              "Startup Projects",
-              "Open Source Contributions"
+              "Data Engineering Solutions",
+              "Business Intelligence Dashboards",
+              "Data Analytics Projects",
+              "ETL/ELT Pipeline Development",
+              "Statistical Analysis",
+              "Data Visualization",
+              "Business Analytics Consulting",
+              "Data-driven Decision Making"
             ].map((type, index) => (
               <Badge 
                 key={type} 

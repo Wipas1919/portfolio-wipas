@@ -5,67 +5,51 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      company: "TechCorp Solutions",
-      position: "Senior Full Stack Developer",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      company: "N.C.C Management and Development (QSNCC)",
+      position: "Business Analytics Officer",
+      location: "Bangkok, Thailand",
+      period: "2025 - Present",
       type: "Full-time",
-      description: "Lead developer for enterprise-level web applications serving 100k+ users. Architected microservices infrastructure and mentored junior developers.",
+      description: "Leading business analytics initiatives to drive data-driven decision making across the organization. Developing comprehensive analytics solutions and business intelligence frameworks.",
       achievements: [
-        "Reduced application load times by 40% through performance optimization",
-        "Led migration from monolith to microservices architecture",
-        "Mentored 5 junior developers and established code review processes",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
+        "Currently developing advanced analytics frameworks for business optimization",
+        "Implementing data-driven strategies for organizational growth",
+        "Building comprehensive business intelligence dashboards",
+        "Leading cross-functional analytics projects"
       ],
-      technologies: ["React", "Node.js", "PostgreSQL", "Docker", "AWS", "TypeScript"]
+      technologies: ["Power BI", "Python", "SQL", "Excel", "Statistical Analysis", "Business Intelligence"]
     },
     {
       id: 2,
-      company: "StartupXYZ",
-      position: "Full Stack Developer",
-      location: "Remote",
-      period: "2020 - 2022",
+      company: "stiid co. ltd",
+      position: "Project Coordinator - Design Solutions",
+      location: "Bangkok, Thailand",
+      period: "2022 - 2024",
       type: "Full-time",
-      description: "Built the core platform from ground up for a fast-growing fintech startup. Responsible for both frontend and backend development.",
+      description: "Coordinated design solution projects, managing data analysis requirements and ensuring project delivery aligned with business objectives.",
       achievements: [
-        "Developed MVP that secured $2M Series A funding",
-        "Built real-time trading dashboard with WebSocket integration",
-        "Implemented secure payment processing with Stripe",
-        "Scaled application to handle 10k+ concurrent users"
+        "Successfully coordinated multiple design solution projects",
+        "Implemented data analysis processes for project optimization",
+        "Collaborated with cross-functional teams to deliver solutions",
+        "Managed project timelines and stakeholder communications"
       ],
-      technologies: ["Vue.js", "Express.js", "MongoDB", "Socket.io", "Stripe", "Docker"]
+      technologies: ["Project Management", "Data Analysis", "Excel", "Business Analysis", "Stakeholder Management"]
     },
     {
       id: 3,
-      company: "Digital Agency Pro",
-      position: "Frontend Developer",
-      location: "New York, NY",
-      period: "2019 - 2020",
-      type: "Full-time",
-      description: "Developed responsive websites and web applications for various clients across different industries.",
+      company: "King Mongkut University of Technology North Bangkok",
+      position: "Business Administration Student",
+      location: "Bangkok, Thailand",
+      period: "2018 - 2022",
+      type: "Education",
+      description: "Graduated in Business Administration with focus on data analysis, business intelligence, and analytical thinking. Built strong foundation in business processes and data-driven decision making.",
       achievements: [
-        "Delivered 20+ client projects with 100% on-time completion",
-        "Improved client website performance scores by average 35%",
-        "Developed reusable component library used across all projects",
-        "Collaborated with design team to implement pixel-perfect UIs"
+        "Successfully completed Business Administration degree",
+        "Developed strong analytical and critical thinking skills",
+        "Gained comprehensive understanding of business processes",
+        "Built foundation in data analysis and business intelligence"
       ],
-      technologies: ["JavaScript", "HTML/CSS", "React", "Gatsby", "GraphQL", "Contentful"]
-    },
-    {
-      id: 4,
-      company: "Freelance",
-      position: "Web Developer",
-      location: "Remote",
-      period: "2018 - 2019",
-      type: "Contract",
-      description: "Provided web development services to small and medium businesses, helping them establish their online presence.",
-      achievements: [
-        "Completed 15+ freelance projects across various industries",
-        "Built e-commerce solutions generating $500k+ in client revenue",
-        "Established long-term partnerships with 5 recurring clients",
-        "Maintained 5-star rating across all freelance platforms"
-      ],
-      technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "WooCommerce"]
+      technologies: ["Business Analysis", "Data Analysis", "Excel", "Statistical Methods", "Research Methods"]
     }
   ];
 
@@ -77,7 +61,7 @@ const ExperienceSection = () => {
             Professional <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            6+ years of experience building scalable applications and leading development teams
+            Professional experience in analytics, data solutions, and business intelligence with strong educational foundation
           </p>
         </div>
 
@@ -151,16 +135,16 @@ const ExperienceSection = () => {
         {/* Additional Info */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 text-center animate-fade-in-up">
           <div className="bg-card border border-border rounded-lg p-6">
-            <div className="text-3xl font-bold text-primary mb-2">6+</div>
+            <div className="text-3xl font-bold text-primary mb-2">3+</div>
             <div className="text-muted-foreground">Years Experience</div>
           </div>
           <div className="bg-card border border-border rounded-lg p-6">
-            <div className="text-3xl font-bold text-primary mb-2">50+</div>
-            <div className="text-muted-foreground">Projects Completed</div>
+            <div className="text-3xl font-bold text-primary mb-2">10+</div>
+            <div className="text-muted-foreground">Analytics Projects</div>
           </div>
           <div className="bg-card border border-border rounded-lg p-6">
-            <div className="text-3xl font-bold text-primary mb-2">15+</div>
-            <div className="text-muted-foreground">Technologies Mastered</div>
+            <div className="text-3xl font-bold text-primary mb-2">8+</div>
+            <div className="text-muted-foreground">Data Tools Mastered</div>
           </div>
         </div>
       </div>

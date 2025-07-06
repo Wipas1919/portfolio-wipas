@@ -4,41 +4,41 @@ import { Progress } from "@/components/ui/progress";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      category: "Frontend Development",
+      category: "Data Engineering",
       skills: [
-        { name: "React/Next.js", level: 95, experience: "5+ years" },
-        { name: "TypeScript", level: 90, experience: "4+ years" },
-        { name: "Vue.js", level: 85, experience: "3+ years" },
-        { name: "Tailwind CSS", level: 92, experience: "3+ years" },
-        { name: "HTML/CSS", level: 98, experience: "7+ years" }
+        { name: "Python", level: 95, experience: "4+ years" },
+        { name: "SQL/PostgreSQL", level: 92, experience: "5+ years" },
+        { name: "Apache Spark", level: 88, experience: "3+ years" },
+        { name: "Apache Airflow", level: 85, experience: "2+ years" },
+        { name: "ETL/ELT Pipelines", level: 90, experience: "3+ years" }
       ]
     },
     {
-      category: "Backend Development",
+      category: "Data Analytics & BI",
       skills: [
-        { name: "Node.js", level: 93, experience: "5+ years" },
-        { name: "Python", level: 88, experience: "4+ years" },
-        { name: "Express.js", level: 90, experience: "4+ years" },
-        { name: "PostgreSQL", level: 85, experience: "4+ years" },
-        { name: "MongoDB", level: 82, experience: "3+ years" }
+        { name: "Power BI", level: 93, experience: "4+ years" },
+        { name: "Tableau", level: 88, experience: "3+ years" },
+        { name: "Excel/Advanced Analytics", level: 95, experience: "6+ years" },
+        { name: "Statistical Analysis", level: 85, experience: "3+ years" },
+        { name: "Data Visualization", level: 90, experience: "4+ years" }
       ]
     },
     {
-      category: "DevOps & Tools",
+      category: "Cloud & Tools",
       skills: [
-        { name: "Docker", level: 88, experience: "3+ years" },
-        { name: "AWS", level: 85, experience: "3+ years" },
-        { name: "Git", level: 95, experience: "6+ years" },
-        { name: "CI/CD", level: 80, experience: "2+ years" },
-        { name: "Linux", level: 87, experience: "4+ years" }
+        { name: "AWS/Azure", level: 82, experience: "2+ years" },
+        { name: "Apache Kafka", level: 80, experience: "2+ years" },
+        { name: "Docker", level: 85, experience: "2+ years" },
+        { name: "Git", level: 88, experience: "3+ years" },
+        { name: "NoSQL (MongoDB)", level: 83, experience: "2+ years" }
       ]
     }
   ];
 
   const technologies = [
-    "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Node.js", 
-    "Python", "PostgreSQL", "MongoDB", "Docker", "AWS", "Git", "GraphQL", 
-    "REST APIs", "Tailwind CSS", "Socket.io", "Redis", "Express.js"
+    "Python", "SQL", "PostgreSQL", "Power BI", "Tableau", "Excel", 
+    "Apache Spark", "Apache Airflow", "ETL/ELT", "AWS", "Azure", "Docker", 
+    "Apache Kafka", "MongoDB", "Statistical Analysis", "Data Modeling", "Git", "Machine Learning"
   ];
 
   return (
@@ -49,7 +49,7 @@ const SkillsSection = () => {
             Technical <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive skill set spanning modern web development, cloud architecture, and emerging technologies
+            Comprehensive skill set spanning data engineering, analytics, and business intelligence with focus on creating data-driven solutions
           </p>
         </div>
 

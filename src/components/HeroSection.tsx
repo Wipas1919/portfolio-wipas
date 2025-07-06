@@ -19,14 +19,14 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            <span className="gradient-text">Alex Thompson</span>
+            <span className="gradient-text">Wipas Anantamongkol</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
-            Full Stack Developer & Technical Architect
+            Analytics & Data Careers
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Crafting exceptional digital experiences with modern technologies. 
-            Specialized in React, Node.js, and scalable cloud architecture.
+            My name is Wipas Anantamongkol (Frong), a passionate person about data, insights, and creating meaningful solutions. 
+            Specialized in Data Engineering, Data Analytics, and Business Intelligence.
           </p>
         </div>
         
@@ -43,7 +43,7 @@ const HeroSection = () => {
         
         <div className="flex justify-center gap-6 animate-fade-in-up">
           <a 
-            href="https://github.com" 
+            href="https://github.com/Wipas1919" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect"
@@ -51,7 +51,7 @@ const HeroSection = () => {
             <Github className="w-6 h-6" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/wipas-ananta" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect"
@@ -59,7 +59,7 @@ const HeroSection = () => {
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
-            href="mailto:alex@example.com"
+            href="mailto:Wipas.ananta@gmail.com"
             className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect"
           >
             <Mail className="w-6 h-6" />
