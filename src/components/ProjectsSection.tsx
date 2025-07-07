@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
-import projectDashboard from "@/assets/project-dashboard.jpg";
+import dataEngineeringIllustration from "@/assets/data-engineering-illustration.jpg";
+import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
+import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
+import aiContentIllustration from "@/assets/ai-content-illustration.jpg";
 import { 
   Carousel, 
   CarouselContent, 
@@ -9,10 +12,14 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import type { CarouselApi } from "@/components/ui/carousel";
 
 const ProjectsSection = () => {
   const [selectedLevel, setSelectedLevel] = useState<'entry' | 'middle' | 'high'>('entry');
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
 
   const projects = [
     {
@@ -22,7 +29,7 @@ const ProjectsSection = () => {
       technologies: ["Python", "Apache Airflow", "PostgreSQL", "Docker", "Tableau"],
       demoUrl: "/project/data-engineering-journey",
       githubUrl: "https://github.com/Wipas1919/data-engineering-journey",
-      imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      imageUrl: dataEngineeringIllustration,
       level: 'entry' as const
     },
     {
@@ -32,7 +39,7 @@ const ProjectsSection = () => {
       technologies: ["OpenMetadata", "Python", "Apache Kafka", "PostgreSQL", "React"],
       demoUrl: "/project/data-governance",
       githubUrl: "https://github.com/example/data-governance",
-      imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
+      imageUrl: dataGovernanceIllustration,
       level: 'entry' as const
     },
     {
@@ -42,7 +49,7 @@ const ProjectsSection = () => {
       technologies: ["Vue.js", "Laravel", "MySQL", "Chart.js"],
       demoUrl: "https://tasks.example.com",
       githubUrl: "https://github.com/example/taskmanager",
-      imageUrl: projectDashboard,
+      imageUrl: taskManagementIllustration,
       level: 'entry' as const
     },
     {
@@ -52,7 +59,7 @@ const ProjectsSection = () => {
       technologies: ["Python", "TensorFlow", "FastAPI", "React"],
       demoUrl: "https://ai.example.com",
       githubUrl: "https://github.com/example/ai-content",
-      imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+      imageUrl: aiContentIllustration,
       level: 'entry' as const
     }
   ];
@@ -64,6 +71,24 @@ const ProjectsSection = () => {
     { key: 'middle' as const, label: 'Middle Level' },
     { key: 'high' as const, label: 'High Level' }
   ];
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  useEffect(() => {
+    setCount(filteredProjects.length);
+    setCurrent(0);
+  }, [filteredProjects.length]);
 
   return (
     <section id="projects" className="py-20 px-6">
@@ -93,8 +118,16 @@ const ProjectsSection = () => {
 
         {/* Projects Carousel */}
         {filteredProjects.length > 0 ? (
-          <Carousel className="w-full max-w-6xl mx-auto">
-            <CarouselContent className="-ml-2 md:-ml-4">
+          <div className="space-y-8">
+            <Carousel 
+              setApi={setApi}
+              className="w-full max-w-6xl mx-auto"
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
               {filteredProjects.map((project, index) => (
                 <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
                   <div className="project-card animate-fade-in-up h-full" style={{animationDelay: `${index * 0.1}s`}}>
@@ -143,10 +176,27 @@ const ProjectsSection = () => {
                   </div>
                 </CarouselItem>
               ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+            
+            {/* Dot Indicators */}
+            <div className="flex justify-center space-x-2">
+              {Array.from({ length: count }, (_, index) => (
+                <button
+                  key={index}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === current
+                      ? "bg-primary w-8"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  onClick={() => api?.scrollTo(index)}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
         ) : (
           <div className="text-center py-12">
             <p className="text-muted-foreground text-lg">
