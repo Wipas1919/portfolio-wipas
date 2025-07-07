@@ -132,8 +132,8 @@ const ContactSection = () => {
 
           {/* Resume Download Card */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <div className="relative bg-gradient-to-br from-card via-card to-secondary/30 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative bg-gradient-to-br from-card via-card to-accent/20 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-primary/10 rounded-lg">
