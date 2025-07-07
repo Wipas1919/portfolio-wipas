@@ -32,13 +32,24 @@ const SkillsSection = () => {
         { name: "Git", level: 88, experience: "3+ years" },
         { name: "NoSQL (MongoDB)", level: 83, experience: "2+ years" }
       ]
+    },
+    {
+      category: "DevOps & Infrastructure",
+      skills: [
+        { name: "DevOps Pipeline", level: 78, experience: "2+ years" },
+        { name: "CI/CD", level: 80, experience: "2+ years" },
+        { name: "Backend Development", level: 75, experience: "2+ years" },
+        { name: "Data Infrastructure", level: 85, experience: "3+ years" },
+        { name: "Kubernetes", level: 70, experience: "1+ years" }
+      ]
     }
   ];
 
   const technologies = [
     "Python", "SQL", "PostgreSQL", "Power BI", "Tableau", "Excel", 
     "Apache Spark", "Apache Airflow", "ETL/ELT", "AWS", "Azure", "Docker", 
-    "Apache Kafka", "MongoDB", "Statistical Analysis", "Data Modeling", "Git", "Machine Learning"
+    "Apache Kafka", "MongoDB", "Statistical Analysis", "Data Modeling", "Git", "Machine Learning",
+    "DevOps", "CI/CD", "Backend Development", "Data Infrastructure", "Kubernetes"
   ];
 
   return (
@@ -54,7 +65,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills by Category */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.category} 
