@@ -2,8 +2,18 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
 import projectDashboard from "@/assets/project-dashboard.jpg";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
+import { useState } from "react";
 
 const ProjectsSection = () => {
+  const [selectedLevel, setSelectedLevel] = useState<'entry' | 'middle' | 'high'>('entry');
+
   const projects = [
     {
       id: 1,
@@ -13,7 +23,7 @@ const ProjectsSection = () => {
       demoUrl: "/project/data-engineering-journey",
       githubUrl: "https://github.com/Wipas1919/data-engineering-journey",
       imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      featured: true
+      level: 'entry' as const
     },
     {
       id: 2,
@@ -23,7 +33,7 @@ const ProjectsSection = () => {
       demoUrl: "/project/data-governance",
       githubUrl: "https://github.com/example/data-governance",
       imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-      featured: true
+      level: 'entry' as const
     },
     {
       id: 3,
@@ -33,7 +43,7 @@ const ProjectsSection = () => {
       demoUrl: "https://tasks.example.com",
       githubUrl: "https://github.com/example/taskmanager",
       imageUrl: projectDashboard,
-      featured: false
+      level: 'entry' as const
     },
     {
       id: 4,
@@ -43,12 +53,17 @@ const ProjectsSection = () => {
       demoUrl: "https://ai.example.com",
       githubUrl: "https://github.com/example/ai-content",
       imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-      featured: false
+      level: 'entry' as const
     }
   ];
 
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const filteredProjects = projects.filter(project => project.level === selectedLevel);
+
+  const levels = [
+    { key: 'entry' as const, label: 'Entry Level' },
+    { key: 'middle' as const, label: 'Middle Level' },
+    { key: 'high' as const, label: 'High Level' }
+  ];
 
   return (
     <section id="projects" className="py-20 px-6">
@@ -62,94 +77,86 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        {/* Featured Projects */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {featuredProjects.map((project, index) => (
-            <div key={project.id} className="project-card animate-fade-in-up" style={{animationDelay: `${index * 0.2}s`}}>
-              <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-secondary/50">
-                <img 
-                  src={project.imageUrl} 
-                  alt={project.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              
-              <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                {project.description}
-              </p>
-              
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="skill-badge">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-              
-              <div className="flex gap-4">
-                <Button asChild className="flex-1">
-                  {project.demoUrl.startsWith('/') ? (
-                    <a href={project.demoUrl}>
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </a>
-                  ) : (
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </a>
-                  )}
-                </Button>
-                <Button variant="outline" asChild>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </a>
-                </Button>
-              </div>
-            </div>
+        {/* Level Filter Buttons */}
+        <div className="flex justify-center gap-4 mb-12">
+          {levels.map((level) => (
+            <Button
+              key={level.key}
+              variant={selectedLevel === level.key ? "default" : "outline"}
+              onClick={() => setSelectedLevel(level.key)}
+              className="px-6 py-2"
+            >
+              {level.label}
+            </Button>
           ))}
         </div>
 
-        {/* Other Projects */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold mb-6">More Projects</h3>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-6">
-          {otherProjects.map((project, index) => (
-            <div key={project.id} className="project-card animate-fade-in-up" style={{animationDelay: `${(index + 2) * 0.2}s`}}>
-              <h4 className="text-xl font-bold mb-3">{project.title}</h4>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-                {project.description}
-              </p>
-              
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="skill-badge text-xs">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-              
-              <div className="flex gap-3">
-                <Button size="sm" asChild>
-                  <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-3 h-3 mr-1" />
-                    Demo
-                  </a>
-                </Button>
-                <Button size="sm" variant="outline" asChild>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-3 h-3 mr-1" />
-                    Code
-                  </a>
-                </Button>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Projects Carousel */}
+        {filteredProjects.length > 0 ? (
+          <Carousel className="w-full max-w-6xl mx-auto">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {filteredProjects.map((project, index) => (
+                <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
+                  <div className="project-card animate-fade-in-up h-full" style={{animationDelay: `${index * 0.1}s`}}>
+                    <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-secondary/50">
+                      <img 
+                        src={project.imageUrl} 
+                        alt={project.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    
+                    <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
+                      {project.description}
+                    </p>
+                    
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.technologies.map((tech) => (
+                        <Badge key={tech} variant="secondary" className="skill-badge text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                    
+                    <div className="flex gap-3 mt-auto">
+                      <Button size="sm" asChild className="flex-1">
+                        {project.demoUrl.startsWith('/') ? (
+                          <a href={project.demoUrl}>
+                            <ExternalLink className="w-3 h-3 mr-1" />
+                            Demo
+                          </a>
+                        ) : (
+                          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-3 h-3 mr-1" />
+                            Demo
+                          </a>
+                        )}
+                      </Button>
+                      <Button size="sm" variant="outline" asChild>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-3 h-3 mr-1" />
+                          Code
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground text-lg">
+              No projects available for {levels.find(l => l.key === selectedLevel)?.label}
+            </p>
+            <p className="text-muted-foreground text-sm mt-2">
+              Check back later for new projects!
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
