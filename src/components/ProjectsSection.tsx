@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       title: "Data Governance (From scratch)",
       description: "Complete data governance framework implementation using OpenMetadata. Establishing data ownership, quality standards, and governance policies with stakeholder collaboration workflows.",
       technologies: ["OpenMetadata", "Python", "Apache Kafka", "PostgreSQL", "React"],
-      demoUrl: "https://governance.example.com",
+      demoUrl: "/project/data-governance",
       githubUrl: "https://github.com/example/data-governance",
       imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
       featured: true
