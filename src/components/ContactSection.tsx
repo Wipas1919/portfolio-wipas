@@ -132,8 +132,8 @@ const ContactSection = () => {
 
           {/* Resume Download Card */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <div className="relative bg-gradient-to-br from-card via-card to-primary/20 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative bg-gradient-to-br from-card via-card to-secondary/30 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-primary/10 rounded-lg">
@@ -141,21 +141,24 @@ const ContactSection = () => {
                   </div>
                   <h3 className="text-2xl font-bold gradient-text">Resume</h3>
                 </div>
-                <div className="text-center">
-                  <div className="mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Download className="w-8 h-8 text-primary" />
+                <div className="space-y-5">
+                  <div className="flex items-center gap-4 animate-fade-in-up">
+                    <div className="p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                      <Download className="w-5 h-5 text-primary" />
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Download my complete professional resume with detailed experience and qualifications.
-                    </p>
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground">Professional Resume</div>
+                      <div className="text-muted-foreground">Complete experience & qualifications</div>
+                    </div>
                   </div>
-                  <Button className="w-full glow-effect bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl" asChild>
-                    <a href="/resume.pdf" download className="flex items-center justify-center gap-2">
-                      <Download className="w-4 h-4" />
-                      <span className="font-semibold">Download Resume (PDF)</span>
-                    </a>
-                  </Button>
+                  <div className="pt-4">
+                    <Button className="w-full glow-effect bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl" asChild>
+                      <a href="/resume.pdf" download className="flex items-center justify-center gap-2">
+                        <Download className="w-4 h-4" />
+                        <span className="font-semibold">Download PDF</span>
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
