@@ -1,10 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Theme Toggle */}
+      <div className="absolute top-6 right-6 z-20">
+        <ThemeToggle />
+      </div>
+      
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
