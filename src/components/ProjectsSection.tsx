@@ -7,11 +7,11 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, order management, and real-time inventory tracking.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Docker"],
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example/ecommerce",
+      title: "End to End Data Engineering Journey (From scratch)",
+      description: "Complete data engineering pipeline built from ground up. From raw data ingestion to advanced analytics dashboard, showcasing the entire data journey with modern tools and best practices.",
+      technologies: ["Python", "Apache Airflow", "PostgreSQL", "Docker", "Tableau"],
+      demoUrl: "/project/data-engineering-journey",
+      githubUrl: "https://github.com/Wipas1919/data-engineering-journey",
       imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       featured: true
     },
@@ -89,10 +89,17 @@ const ProjectsSection = () => {
               
               <div className="flex gap-4">
                 <Button asChild className="flex-1">
-                  <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </a>
+                  {project.demoUrl.startsWith('/') ? (
+                    <a href={project.demoUrl}>
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </a>
+                  ) : (
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </a>
+                  )}
                 </Button>
                 <Button variant="outline" asChild>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
