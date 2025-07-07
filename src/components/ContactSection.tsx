@@ -53,71 +53,111 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Contact Info & Social */}
-          <div className="space-y-8 animate-fade-in-up">
-            {/* Contact Information */}
-            <div className="bg-card border border-border rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <div className="space-y-4">
-                {contactInfo.map((info) => (
-                  <div key={info.label} className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <info.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="font-medium">{info.label}</div>
-                      {info.href ? (
-                        <a href={info.href} className="text-muted-foreground hover:text-primary transition-colors">
-                          {info.value}
-                        </a>
-                      ) : (
-                        <div className="text-muted-foreground">{info.value}</div>
-                      )}
-                    </div>
+          {/* Contact Information Card */}
+          <div className="animate-fade-in-up">
+            <div className="relative bg-gradient-to-br from-card via-card to-secondary/30 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <Mail className="w-6 h-6 text-primary" />
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Social Links */}
-            <div className="bg-card border border-border rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-6">Connect Online</h3>
-              <div className="space-y-4">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between p-4 bg-secondary/50 hover:bg-secondary rounded-lg transition-colors group"
-                  >
-                    <div className="flex items-center gap-4">
-                      <social.icon className="w-5 h-5 text-primary" />
-                      <div>
-                        <div className="font-medium">{social.name}</div>
-                        <div className="text-sm text-muted-foreground">{social.username}</div>
+                  <h3 className="text-2xl font-bold gradient-text">Get in Touch</h3>
+                </div>
+                <div className="space-y-5">
+                  {contactInfo.map((info, index) => (
+                    <div key={info.label} className="flex items-center gap-4 animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
+                      <div className="p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <info.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="font-semibold text-foreground">{info.label}</div>
+                        {info.href ? (
+                          <a 
+                            href={info.href} 
+                            className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:underline decoration-primary/50"
+                          >
+                            {info.value}
+                          </a>
+                        ) : (
+                          <div className="text-muted-foreground">{info.value}</div>
+                        )}
                       </div>
                     </div>
-                    <Badge variant="outline" className="group-hover:border-primary transition-colors">
-                      Follow
-                    </Badge>
-                  </a>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Resume Download */}
-            <div className="bg-card border border-border rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-4">Resume</h3>
-              <p className="text-muted-foreground mb-6">
-                Download my resume for a detailed overview of my experience and qualifications.
-              </p>
-              <Button className="w-full glow-effect" asChild>
-                <a href="/resume.pdf" download>
-                  <Download className="w-4 h-4 mr-2" />
-                  Download Resume (PDF)
-                </a>
-              </Button>
+          {/* Social Links Card */}
+          <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <div className="relative bg-gradient-to-br from-card via-card to-accent/20 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-accent/10 rounded-lg">
+                    <Github className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-bold gradient-text">Connect Online</h3>
+                </div>
+                <div className="space-y-4">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/link flex items-center justify-between p-4 bg-gradient-to-r from-secondary/30 to-secondary/50 hover:from-secondary/50 hover:to-secondary/70 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] animate-fade-in-up"
+                      style={{animationDelay: `${index * 0.1 + 0.2}s`}}
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="p-2 bg-primary/10 rounded-lg group-hover/link:bg-primary/20 transition-colors duration-300">
+                          <social.icon className="w-5 h-5 text-primary" />
+                        </div>
+                        <div>
+                          <div className="font-semibold text-foreground">{social.name}</div>
+                          <div className="text-sm text-muted-foreground">{social.username}</div>
+                        </div>
+                      </div>
+                      <Badge variant="outline" className="group-hover/link:border-primary group-hover/link:bg-primary/10 transition-all duration-300">
+                        Follow
+                      </Badge>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Resume Download Card */}
+          <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            <div className="relative bg-gradient-to-br from-card via-card to-primary/20 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <Download className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold gradient-text">Resume</h3>
+                </div>
+                <div className="text-center">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Download className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Download my complete professional resume with detailed experience and qualifications.
+                    </p>
+                  </div>
+                  <Button className="w-full glow-effect bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl" asChild>
+                    <a href="/resume.pdf" download className="flex items-center justify-center gap-2">
+                      <Download className="w-4 h-4" />
+                      <span className="font-semibold">Download Resume (PDF)</span>
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
