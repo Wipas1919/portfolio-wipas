@@ -162,7 +162,7 @@ const ProjectsSection = () => {
                         ) : (
                           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="w-3 h-3 mr-1" />
-                            Demo
+                            More
                           </a>
                         )}
                       </Button>
