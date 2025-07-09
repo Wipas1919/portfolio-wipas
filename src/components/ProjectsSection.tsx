@@ -47,7 +47,7 @@ const ProjectsSection = () => {
       title: "Smart Footfall Dashboard",
       description: "Near real-time footfall dashboard showcasing visitor traffic analytics during multiday events. Complete data pipeline from sensor ingestion to interactive visualization with crowd density insights.",
       technologies: ["Python", "Apache Kafka", "InfluxDB", "React", "D3.js"],
-      demoUrl: "https://footfall.example.com",
+      demoUrl: "/project/smart-footfall-dashboard",
       githubUrl: "https://github.com/example/smart-footfall",
       imageUrl: taskManagementIllustration,
       level: 'entry' as const
