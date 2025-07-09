@@ -1,10 +1,11 @@
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
+import { Database, BarChart3, Cloud, Settings } from "lucide-react";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       category: "Data Engineering",
+      icon: Database,
       skills: [
         { name: "Python", level: 95, experience: "4+ years" },
         { name: "SQL/PostgreSQL", level: 92, experience: "5+ years" },
@@ -15,6 +16,7 @@ const SkillsSection = () => {
     },
     {
       category: "Data Analytics & BI",
+      icon: BarChart3,
       skills: [
         { name: "Power BI", level: 93, experience: "4+ years" },
         { name: "Tableau", level: 88, experience: "3+ years" },
@@ -25,6 +27,7 @@ const SkillsSection = () => {
     },
     {
       category: "Cloud & Tools",
+      icon: Cloud,
       skills: [
         { name: "AWS/Azure", level: 82, experience: "2+ years" },
         { name: "Apache Kafka", level: 80, experience: "2+ years" },
@@ -35,6 +38,7 @@ const SkillsSection = () => {
     },
     {
       category: "DevOps & Infrastructure",
+      icon: Settings,
       skills: [
         { name: "DevOps Pipeline", level: 78, experience: "2+ years" },
         { name: "CI/CD", level: 80, experience: "2+ years" },
@@ -72,26 +76,28 @@ const SkillsSection = () => {
               className="bg-card border border-border rounded-lg p-8 animate-fade-in-up shadow-sm hover:shadow-md transition-shadow"
               style={{animationDelay: `${categoryIndex * 0.2}s`}}
             >
-              <h3 className="text-xl font-bold mb-6 text-center">{category.category}</h3>
-              <div className="space-y-4">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <category.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold">{category.category}</h3>
+              </div>
+              <div className="space-y-3">
                 {category.skills.map((skill) => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium">{skill.name}</span>
-                        {skill.type === "educational" ? (
-                          <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
-                            Educational
-                          </Badge>
-                        ) : (
-                          <Badge variant="default" className="text-xs px-2 py-0.5 bg-green-50/50 border-green-200/50 text-green-700">
-                            Professional
-                          </Badge>
-                        )}
-                      </div>
-                      <span className="text-sm text-muted-foreground">{skill.experience}</span>
+                  <div key={skill.name} className="flex items-center justify-between p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors">
+                    <div className="flex items-center gap-3">
+                      <span className="font-medium">{skill.name}</span>
+                      {skill.type === "educational" ? (
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
+                          Educational
+                        </Badge>
+                      ) : (
+                        <Badge variant="default" className="text-xs px-2 py-0.5 bg-green-50/50 border-green-200/50 text-green-700">
+                          Professional
+                        </Badge>
+                      )}
                     </div>
-                    <Progress value={skill.level} className="h-2" />
+                    <span className="text-sm text-muted-foreground font-medium">{skill.experience}</span>
                   </div>
                 ))}
               </div>
