@@ -8,8 +8,8 @@ const SkillsSection = () => {
       skills: [
         { name: "Python", level: 95, experience: "4+ years" },
         { name: "SQL/PostgreSQL", level: 92, experience: "5+ years" },
-        { name: "Apache Spark", level: 88, experience: "3+ years" },
-        { name: "Apache Airflow", level: 85, experience: "2+ years" },
+        { name: "Apache Spark", level: 88, experience: "3+ years", type: "educational" },
+        { name: "Apache Airflow", level: 85, experience: "2+ years", type: "educational" },
         { name: "ETL/ELT Pipelines", level: 90, experience: "3+ years" }
       ]
     },
@@ -30,7 +30,7 @@ const SkillsSection = () => {
         { name: "Apache Kafka", level: 80, experience: "2+ years" },
         { name: "Docker", level: 85, experience: "2+ years" },
         { name: "Git", level: 88, experience: "3+ years" },
-        { name: "NoSQL (MongoDB)", level: 83, experience: "2+ years" }
+        { name: "NoSQL (MongoDB)", level: 83, experience: "2+ years", type: "educational" }
       ]
     },
     {
@@ -65,11 +65,11 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills by Category */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.category} 
-              className="bg-card border border-border rounded-lg p-6 animate-fade-in-up"
+              className="bg-card border border-border rounded-lg p-8 animate-fade-in-up shadow-sm hover:shadow-md transition-shadow"
               style={{animationDelay: `${categoryIndex * 0.2}s`}}
             >
               <h3 className="text-xl font-bold mb-6 text-center">{category.category}</h3>
@@ -77,10 +77,22 @@ const SkillsSection = () => {
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">{skill.name}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{skill.name}</span>
+                        {skill.type === "educational" && (
+                          <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
+                            Educational
+                          </Badge>
+                        )}
+                      </div>
                       <span className="text-sm text-muted-foreground">{skill.experience}</span>
                     </div>
-                    <Progress value={skill.level} className="h-2" />
+                    <div className="flex items-center gap-2">
+                      <Progress value={skill.level} className="h-2 flex-1" />
+                      <span className="text-xs font-medium text-muted-foreground min-w-[35px]">
+                        {skill.level}%
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
