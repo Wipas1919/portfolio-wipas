@@ -1,15 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
-import Background3D from "./Background3D";
 import heroBackground from "@/assets/hero-background.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* 3D Background */}
-      <Background3D />
-      
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src={heroBackground} alt="Developer workspace" className="w-full h-full object-cover opacity-20" />
+        <img src={heroBackground} alt="Developer workspace" className="w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 hero-section" />
       </div>
       
@@ -40,13 +36,13 @@ const HeroSection = () => {
         </div>
         
         <div className="flex justify-center gap-6 animate-fade-in-up">
-          <a href="https://github.com/Wipas1919" target="_blank" rel="noopener noreferrer" className="glass-card p-3 rounded-full hover:scale-105 transition-all glow-effect">
+          <a href="https://github.com/Wipas1919" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
             <Github className="w-6 h-6" />
           </a>
-          <a href="https://www.linkedin.com/in/wipas-ananta" target="_blank" rel="noopener noreferrer" className="glass-card p-3 rounded-full hover:scale-105 transition-all glow-effect">
+          <a href="https://www.linkedin.com/in/wipas-ananta" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="mailto:Wipas.ananta@gmail.com" className="glass-card p-3 rounded-full hover:scale-105 transition-all glow-effect">
+          <a href="mailto:Wipas.ananta@gmail.com" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
             <Mail className="w-6 h-6" />
           </a>
         </div>
