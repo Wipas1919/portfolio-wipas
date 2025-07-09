@@ -61,6 +61,16 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/example/tech-talk-workshop",
       imageUrl: aiContentIllustration,
       level: 'entry' as const
+    },
+    {
+      id: 5,
+      title: "AI - Automation Cost Estimation",
+      description: "Automation cost sheet exhibition using Dify AI with interactive chat interface for best results. This project helps employees optimize time spending on tasks, saving approximately 1 FTE through intelligent automation cost analysis.",
+      technologies: ["Dify AI", "Chat Interface", "Automation", "Cost Analysis", "Time Optimization"],
+      demoUrl: "/project/ai-automation-cost-estimation",
+      githubUrl: "https://github.com/example/ai-automation-cost-estimation",
+      imageUrl: taskManagementIllustration,
+      level: 'entry' as const
     }
   ];
 

@@ -10,6 +10,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import DataGovernanceDetails from "./pages/DataGovernanceDetails";
 import SmartFootfallDetails from "./pages/SmartFootfallDetails";
 import TechTalkWorkshopDetails from "./pages/TechTalkWorkshopDetails";
+import AIAutomationCostEstimationDetails from "./pages/AIAutomationCostEstimationDetails";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/project/data-governance" element={<DataGovernanceDetails />} />
             <Route path="/project/smart-footfall-dashboard" element={<SmartFootfallDetails />} />
             <Route path="/project/tech-talk-workshop" element={<TechTalkWorkshopDetails />} />
+            <Route path="/project/ai-automation-cost-estimation" element={<AIAutomationCostEstimationDetails />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
