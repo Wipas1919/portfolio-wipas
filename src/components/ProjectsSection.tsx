@@ -44,11 +44,11 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Task Management Dashboard",
-      description: "Collaborative project management tool with drag-and-drop interface, team collaboration features, and detailed analytics.",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Chart.js"],
-      demoUrl: "https://tasks.example.com",
-      githubUrl: "https://github.com/example/taskmanager",
+      title: "Smart Footfall Dashboard",
+      description: "Near real-time footfall dashboard showcasing visitor traffic analytics during multiday events. Complete data pipeline from sensor ingestion to interactive visualization with crowd density insights.",
+      technologies: ["Python", "Apache Kafka", "InfluxDB", "React", "D3.js"],
+      demoUrl: "https://footfall.example.com",
+      githubUrl: "https://github.com/example/smart-footfall",
       imageUrl: taskManagementIllustration,
       level: 'entry' as const
     },
