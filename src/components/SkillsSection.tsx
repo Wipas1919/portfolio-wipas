@@ -79,20 +79,19 @@ const SkillsSection = () => {
                     <div className="flex justify-between items-center">
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{skill.name}</span>
-                        {skill.type === "educational" && (
+                        {skill.type === "educational" ? (
                           <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
                             Educational
+                          </Badge>
+                        ) : (
+                          <Badge variant="default" className="text-xs px-2 py-0.5 bg-green-50/50 border-green-200/50 text-green-700">
+                            Professional
                           </Badge>
                         )}
                       </div>
                       <span className="text-sm text-muted-foreground">{skill.experience}</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Progress value={skill.level} className="h-2 flex-1" />
-                      <span className="text-xs font-medium text-muted-foreground min-w-[35px]">
-                        {skill.level}%
-                      </span>
-                    </div>
+                    <Progress value={skill.level} className="h-2" />
                   </div>
                 ))}
               </div>
