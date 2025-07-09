@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import ProjectDetails from "./pages/ProjectDetails";
 import DataGovernanceDetails from "./pages/DataGovernanceDetails";
 import SmartFootfallDetails from "./pages/SmartFootfallDetails";
+import TechTalkWorkshopDetails from "./pages/TechTalkWorkshopDetails";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/project/data-engineering-journey" element={<ProjectDetails />} />
             <Route path="/project/data-governance" element={<DataGovernanceDetails />} />
             <Route path="/project/smart-footfall-dashboard" element={<SmartFootfallDetails />} />
+            <Route path="/project/tech-talk-workshop" element={<TechTalkWorkshopDetails />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

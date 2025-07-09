@@ -54,11 +54,11 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: "AI Content Generator",
-      description: "Machine learning powered content generation tool with custom training models and API integration.",
-      technologies: ["Python", "TensorFlow", "FastAPI", "React"],
-      demoUrl: "https://ai.example.com",
-      githubUrl: "https://github.com/example/ai-content",
+      title: "Internal Tech Talk & Workshop - And Power Bi Training",
+      description: "I had the great opportunity to serve as a co-speaker and workshop facilitator in an internal training session focused on emerging technology trends and Support the organization's shift toward self-service analytics and data-driven decision-making.",
+      technologies: ["Power BI", "Data Analytics", "Training", "Workshop", "Self-Service Analytics"],
+      demoUrl: "/project/tech-talk-workshop",
+      githubUrl: "https://github.com/example/tech-talk-workshop",
       imageUrl: aiContentIllustration,
       level: 'entry' as const
     }
