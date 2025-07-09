@@ -157,7 +157,7 @@ const ProjectsSection = () => {
                         {project.demoUrl.startsWith('/') ? (
                           <a href={project.demoUrl}>
                             <ExternalLink className="w-3 h-3 mr-1" />
-                            Demo
+                            More
                           </a>
                         ) : (
                           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
