@@ -54,30 +54,6 @@ const SkillsSection = () => {
       experience: "3+ years"
     }]
   }, {
-    category: "Cloud & Tools",
-    skills: [{
-      name: "AWS/Azure/GCP",
-      experience: "2+ years",
-      level: "intermediate"
-    }, {
-      name: "Apache Kafka",
-      experience: "2+ years",
-      level: "intermediate"
-    }, {
-      name: "Snowflake/BigQuery",
-      experience: "2+ years"
-    }, {
-      name: "Databricks",
-      experience: "1+ years",
-      type: "educational"
-    }, {
-      name: "Terraform",
-      experience: "1+ years"
-    }, {
-      name: "MongoDB/NoSQL",
-      experience: "2+ years"
-    }]
-  }, {
     category: "Data Analytics & BI",
     skills: [{
       name: "Power BI",
@@ -126,7 +102,7 @@ const SkillsSection = () => {
                 {category.skills.map(skill => <div key={skill.name} className="flex justify-between items-center">
                     <span className="font-medium text-sm">{skill.name}</span>
                     <div className="flex items-center gap-2">
-                      {skill.type === "educational" && <Badge variant="outline" className="text-xs px-2 py-0.5 bg-muted/20 border-muted-foreground/30 text-muted-foreground">
+                      {(skill as any).type === "educational" && <Badge variant="outline" className="text-xs px-2 py-0.5 bg-muted/20 border-muted-foreground/30 text-muted-foreground">
                           Educational
                         </Badge>}
                       {skill.level === "advanced" && <Badge variant="outline" className="text-xs px-2 py-0.5 bg-primary text-primary-foreground border-primary">
