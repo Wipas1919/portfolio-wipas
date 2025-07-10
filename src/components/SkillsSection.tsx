@@ -80,8 +80,9 @@ const SkillsSection = () => {
               <div className="space-y-3">
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="flex justify-between items-center">
+                    <span className="font-medium text-sm">{skill.name}</span>
                     <div className="flex items-center gap-2">
-                      <span className="font-medium text-sm">{skill.name}</span>
+                      <span className="text-xs text-muted-foreground">{skill.experience}</span>
                       {skill.type === "educational" && (
                         <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
                           Educational
@@ -103,7 +104,6 @@ const SkillsSection = () => {
                         </Badge>
                       )}
                     </div>
-                    <span className="text-xs text-muted-foreground">{skill.experience}</span>
                   </div>
                 ))}
               </div>
