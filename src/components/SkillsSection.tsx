@@ -6,41 +6,41 @@ const SkillsSection = () => {
     {
       category: "Data Engineering",
       skills: [
-        { name: "Python", level: 95, experience: "4+ years" },
-        { name: "SQL/PostgreSQL", level: 92, experience: "5+ years" },
-        { name: "Apache Spark", level: 88, experience: "3+ years", type: "educational" },
-        { name: "Apache Airflow", level: 85, experience: "2+ years", type: "educational" },
-        { name: "ETL/ELT Pipelines", level: 90, experience: "3+ years" }
-      ]
-    },
-    {
-      category: "Data Analytics & BI",
-      skills: [
-        { name: "Power BI", level: 93, experience: "4+ years" },
-        { name: "Tableau", level: 88, experience: "3+ years" },
-        { name: "Excel/Advanced Analytics", level: 95, experience: "6+ years" },
-        { name: "Statistical Analysis", level: 85, experience: "3+ years" },
-        { name: "Data Visualization", level: 90, experience: "4+ years" }
-      ]
-    },
-    {
-      category: "Cloud & Tools",
-      skills: [
-        { name: "AWS/Azure", level: 82, experience: "2+ years" },
-        { name: "Apache Kafka", level: 80, experience: "2+ years" },
-        { name: "Docker", level: 85, experience: "2+ years" },
-        { name: "Git", level: 88, experience: "3+ years" },
-        { name: "NoSQL (MongoDB)", level: 83, experience: "2+ years", type: "educational" }
+        { name: "Python", experience: "4+ years" },
+        { name: "SQL/PostgreSQL", experience: "5+ years" },
+        { name: "Apache Spark", experience: "3+ years", type: "educational" },
+        { name: "Apache Airflow", experience: "2+ years", type: "educational" },
+        { name: "ETL/ELT Pipelines", experience: "3+ years" }
       ]
     },
     {
       category: "DevOps & Infrastructure",
       skills: [
-        { name: "DevOps Pipeline", level: 78, experience: "2+ years" },
-        { name: "CI/CD", level: 80, experience: "2+ years" },
-        { name: "Backend Development", level: 75, experience: "2+ years" },
-        { name: "Data Infrastructure", level: 85, experience: "3+ years" },
-        { name: "Kubernetes", level: 70, experience: "1+ years" }
+        { name: "DevOps Pipeline", experience: "2+ years" },
+        { name: "CI/CD", experience: "2+ years" },
+        { name: "Backend Development", experience: "2+ years" },
+        { name: "Data Infrastructure", experience: "3+ years" },
+        { name: "Kubernetes", experience: "1+ years" }
+      ]
+    },
+    {
+      category: "Cloud & Tools",
+      skills: [
+        { name: "AWS/Azure", experience: "2+ years" },
+        { name: "Apache Kafka", experience: "2+ years" },
+        { name: "Docker", experience: "2+ years" },
+        { name: "Git", experience: "3+ years" },
+        { name: "NoSQL (MongoDB)", experience: "2+ years", type: "educational" }
+      ]
+    },
+    {
+      category: "Data Analytics & BI",
+      skills: [
+        { name: "Power BI", experience: "4+ years" },
+        { name: "Tableau", experience: "3+ years" },
+        { name: "Excel/Advanced Analytics", experience: "6+ years" },
+        { name: "Statistical Analysis", experience: "3+ years" },
+        { name: "Data Visualization", experience: "4+ years" }
       ]
     }
   ];
@@ -65,34 +65,26 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills by Category */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.category} 
-              className="bg-card border border-border rounded-lg p-8 animate-fade-in-up shadow-sm hover:shadow-md transition-shadow"
+              className="bg-card border border-border rounded-lg p-6 animate-fade-in-up shadow-sm hover:shadow-md transition-shadow"
               style={{animationDelay: `${categoryIndex * 0.2}s`}}
             >
-              <h3 className="text-xl font-bold mb-6 text-center">{category.category}</h3>
-              <div className="space-y-4">
+              <h3 className="text-lg font-bold mb-4 text-center">{category.category}</h3>
+              <div className="space-y-3">
                 {category.skills.map((skill) => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium">{skill.name}</span>
-                        {skill.type === "educational" && (
-                          <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
-                            Educational
-                          </Badge>
-                        )}
-                      </div>
-                      <span className="text-sm text-muted-foreground">{skill.experience}</span>
-                    </div>
+                  <div key={skill.name} className="flex justify-between items-center">
                     <div className="flex items-center gap-2">
-                      <Progress value={skill.level} className="h-2 flex-1" />
-                      <span className="text-xs font-medium text-muted-foreground min-w-[35px]">
-                        {skill.level}%
-                      </span>
+                      <span className="font-medium text-sm">{skill.name}</span>
+                      {skill.type === "educational" && (
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
+                          Educational
+                        </Badge>
+                      )}
                     </div>
+                    <span className="text-xs text-muted-foreground">{skill.experience}</span>
                   </div>
                 ))}
               </div>
