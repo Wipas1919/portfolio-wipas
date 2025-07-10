@@ -93,7 +93,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills by Category */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {skillCategories.map((category, categoryIndex) => <div key={category.category} className="bg-card border border-border rounded-lg p-6 animate-fade-in-up shadow-sm hover:shadow-md transition-shadow" style={{
           animationDelay: `${categoryIndex * 0.2}s`
         }}>
