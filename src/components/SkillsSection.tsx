@@ -83,22 +83,22 @@ const SkillsSection = () => {
                     <span className="font-medium text-sm">{skill.name}</span>
                     <div className="flex items-center gap-2">
                       {skill.type === "educational" && (
-                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-muted/30 border-muted text-muted-foreground">
                           Educational
                         </Badge>
                       )}
                       {skill.level === "advanced" && (
-                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-green-50/50 border-green-200/50 text-green-700">
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-emerald-50/50 border-emerald-200/70 text-emerald-800">
                           Advanced
                         </Badge>
                       )}
                       {skill.level === "intermediate" && (
-                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-yellow-50/50 border-yellow-200/50 text-yellow-700">
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-amber-50/50 border-amber-200/70 text-amber-800">
                           Intermediate
                         </Badge>
                       )}
                       {skill.level === "basic" && (
-                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-gray-50/50 border-gray-200/50 text-gray-700">
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-slate-50/50 border-slate-200/70 text-slate-600">
                           Basic
                         </Badge>
                       )}
