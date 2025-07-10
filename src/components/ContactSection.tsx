@@ -76,7 +76,7 @@ const ContactSection = () => {
           animationDelay: '0.1s'
         }}>
             <div className="relative bg-gradient-to-br from-card via-card to-accent/20 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 my-0" />
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-accent/10 rounded-lg">
@@ -87,7 +87,7 @@ const ContactSection = () => {
                 <div className="space-y-4">
                   {socialLinks.map((social, index) => <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" style={{
                   animationDelay: `${index * 0.1 + 0.2}s`
-                }} className="group/link flex items-center justify-between p-4 bg-gradient-to-r from-secondary/30 to-secondary/50 hover:from-secondary/50 hover:to-secondary/70 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] animate-fade-in-up py-[15px]">
+                }} className="group/link flex items-center justify-between p-4 bg-gradient-to-r from-secondary/30 to-secondary/50 hover:from-secondary/50 hover:to-secondary/70 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] animate-fade-in-up py-[15px] my-[18px]">
                       <div className="flex items-center gap-4">
                         <div className="p-2 bg-primary/10 rounded-lg group-hover/link:bg-primary/20 transition-colors duration-300">
                           <social.icon className="w-5 h-5 text-primary" />
