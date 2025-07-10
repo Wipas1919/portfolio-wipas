@@ -6,11 +6,11 @@ const SkillsSection = () => {
     {
       category: "Data Engineering",
       skills: [
-        { name: "Python", experience: "4+ years" },
+        { name: "Python", experience: "4+ years", level: "intermediate" },
         { name: "SQL/PostgreSQL", experience: "5+ years" },
         { name: "Apache Spark", experience: "3+ years", type: "educational" },
         { name: "Apache Airflow", experience: "2+ years", type: "educational" },
-        { name: "ETL/ELT Pipelines", experience: "3+ years" }
+        { name: "ETL/ELT Pipelines", experience: "3+ years", level: "intermediate" }
       ]
     },
     {
@@ -20,7 +20,7 @@ const SkillsSection = () => {
         { name: "CI/CD", experience: "2+ years" },
         { name: "Backend Development", experience: "2+ years" },
         { name: "Data Infrastructure", experience: "3+ years" },
-        { name: "Kubernetes", experience: "1+ years" }
+        { name: "Kubernetes", experience: "1+ years", level: "basic" }
       ]
     },
     {
@@ -28,18 +28,18 @@ const SkillsSection = () => {
       skills: [
         { name: "AWS/Azure", experience: "2+ years" },
         { name: "Apache Kafka", experience: "2+ years" },
-        { name: "Docker", experience: "2+ years" },
-        { name: "Git", experience: "3+ years" },
+        { name: "Docker", experience: "2+ years", level: "intermediate" },
+        { name: "Git", experience: "3+ years", level: "basic" },
         { name: "NoSQL (MongoDB)", experience: "2+ years", type: "educational" }
       ]
     },
     {
       category: "Data Analytics & BI",
       skills: [
-        { name: "Power BI", experience: "4+ years" },
+        { name: "Power BI", experience: "4+ years", level: "advanced" },
         { name: "Tableau", experience: "3+ years" },
         { name: "Excel/Advanced Analytics", experience: "6+ years" },
-        { name: "Statistical Analysis", experience: "3+ years" },
+        { name: "Statistical Analysis", experience: "3+ years", level: "intermediate" },
         { name: "Data Visualization", experience: "4+ years" }
       ]
     }
@@ -81,6 +81,21 @@ const SkillsSection = () => {
                       {skill.type === "educational" && (
                         <Badge variant="outline" className="text-xs px-2 py-0.5 bg-blue-50/50 border-blue-200/50 text-blue-700">
                           Educational
+                        </Badge>
+                      )}
+                      {skill.level === "advanced" && (
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-green-50/50 border-green-200/50 text-green-700">
+                          Advanced
+                        </Badge>
+                      )}
+                      {skill.level === "intermediate" && (
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-yellow-50/50 border-yellow-200/50 text-yellow-700">
+                          Intermediate
+                        </Badge>
+                      )}
+                      {skill.level === "basic" && (
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-gray-50/50 border-gray-200/50 text-gray-700">
+                          Basic
                         </Badge>
                       )}
                     </div>
