@@ -83,7 +83,7 @@ const SkillsSection = () => {
                     <span className="font-medium text-sm">{skill.name}</span>
                     <div className="flex items-center gap-2">
                       {skill.type === "educational" && (
-                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-primary text-primary-foreground border-primary">
+                        <Badge variant="outline" className="text-xs px-2 py-0.5 bg-muted/20 border-muted-foreground/30 text-muted-foreground">
                           Educational
                         </Badge>
                       )}
