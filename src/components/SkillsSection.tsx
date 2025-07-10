@@ -26,7 +26,7 @@ const SkillsSection = () => {
     {
       category: "Cloud & Tools",
       skills: [
-        { name: "AWS/Azure", experience: "2+ years" },
+        { name: "AWS/Azure/GCP", experience: "2+ years" },
         { name: "Apache Kafka", experience: "2+ years" },
         { name: "Docker", experience: "2+ years", level: "intermediate" },
         { name: "Git", experience: "3+ years", level: "basic" },
