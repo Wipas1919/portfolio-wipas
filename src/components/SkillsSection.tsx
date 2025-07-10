@@ -7,40 +7,44 @@ const SkillsSection = () => {
       category: "Data Engineering",
       skills: [
         { name: "Python", experience: "4+ years", level: "intermediate" },
-        { name: "SQL/PostgreSQL", experience: "5+ years" },
-        { name: "Apache Spark", experience: "3+ years", type: "educational" },
-        { name: "Apache Airflow", experience: "2+ years", type: "educational" },
-        { name: "ETL/ELT Pipelines", experience: "3+ years", level: "intermediate" }
+        { name: "SQL/PostgreSQL", experience: "5+ years", level: "advanced" },
+        { name: "Apache Spark", experience: "3+ years", level: "intermediate" },
+        { name: "Apache Airflow", experience: "2+ years", level: "intermediate" },
+        { name: "ETL/ELT Pipelines", experience: "3+ years", level: "intermediate" },
+        { name: "Data Modeling", experience: "4+ years", level: "intermediate" }
       ]
     },
     {
       category: "DevOps & Infrastructure",
       skills: [
-        { name: "DevOps Pipeline", experience: "2+ years" },
-        { name: "CI/CD", experience: "2+ years" },
-        { name: "Backend Development", experience: "2+ years" },
-        { name: "Data Infrastructure", experience: "3+ years" },
-        { name: "Kubernetes", experience: "1+ years", level: "basic" }
+        { name: "Docker", experience: "2+ years", level: "intermediate" },
+        { name: "Kubernetes", experience: "1+ years", level: "basic" },
+        { name: "CI/CD Pipelines", experience: "2+ years", level: "intermediate" },
+        { name: "Infrastructure as Code", experience: "2+ years" },
+        { name: "Git", experience: "3+ years", level: "intermediate" },
+        { name: "Linux/Unix", experience: "3+ years" }
       ]
     },
     {
       category: "Cloud & Tools",
       skills: [
-        { name: "AWS/Azure/GCP", experience: "2+ years" },
-        { name: "Apache Kafka", experience: "2+ years" },
-        { name: "Docker", experience: "2+ years", level: "intermediate" },
-        { name: "Git", experience: "3+ years", level: "basic" },
-        { name: "NoSQL (MongoDB)", experience: "2+ years", type: "educational" }
+        { name: "AWS/Azure/GCP", experience: "2+ years", level: "intermediate" },
+        { name: "Apache Kafka", experience: "2+ years", level: "intermediate" },
+        { name: "Snowflake/BigQuery", experience: "2+ years" },
+        { name: "Databricks", experience: "1+ years", type: "educational" },
+        { name: "Terraform", experience: "1+ years" },
+        { name: "MongoDB/NoSQL", experience: "2+ years" }
       ]
     },
     {
       category: "Data Analytics & BI",
       skills: [
         { name: "Power BI", experience: "4+ years", level: "advanced" },
-        { name: "Tableau", experience: "3+ years" },
-        { name: "Excel/Advanced Analytics", experience: "6+ years" },
+        { name: "Tableau", experience: "3+ years", level: "intermediate" },
+        { name: "Advanced Excel", experience: "6+ years", level: "advanced" },
         { name: "Statistical Analysis", experience: "3+ years", level: "intermediate" },
-        { name: "Data Visualization", experience: "4+ years" }
+        { name: "Data Visualization", experience: "4+ years", level: "intermediate" },
+        { name: "Business Intelligence", experience: "4+ years" }
       ]
     }
   ];
