@@ -111,23 +111,6 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Technology Stack */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold mb-8">Technology Stack</h3>
-          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-            {technologies.map((tech, index) => (
-              <Badge 
-                key={tech} 
-                variant="secondary" 
-                className="skill-badge text-sm py-2 px-4 animate-fade-in-up"
-                style={{animationDelay: `${index * 0.1}s`}}
-              >
-                {tech}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
         {/* Certifications & Learning */}
         <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up">
           <div className="bg-card border border-border rounded-lg p-6">
