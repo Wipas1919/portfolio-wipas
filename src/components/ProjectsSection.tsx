@@ -140,7 +140,7 @@ const ProjectsSection = () => {
               <CarouselContent className="-ml-2 md:-ml-4">
               {filteredProjects.map((project, index) => (
                 <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
-                  <div className="project-card animate-fade-in-up h-full" style={{animationDelay: `${index * 0.1}s`}}>
+                  <div className="project-card animate-fade-in-up h-full flex flex-col" style={{animationDelay: `${index * 0.1}s`}}>
                     <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-secondary/50">
                       <img 
                         src={project.imageUrl} 
