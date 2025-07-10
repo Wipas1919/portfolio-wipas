@@ -128,7 +128,6 @@ const ContactSection = () => {
                       <div className="font-semibold text-foreground py-[6px]">Professional Resume</div>
                       <div className="text-muted-foreground">Complete experience & qualifications
 
-
                     </div>
                     </div>
                   </div>
