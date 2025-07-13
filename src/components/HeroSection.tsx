@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, ChevronDown } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -31,11 +31,16 @@ const HeroSection = () => {
             <Github className="w-6 h-6" />
           </a>
           <a href="https://www.linkedin.com/in/wipas-ananta" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
-            
+            <Linkedin className="w-6 h-6" />
           </a>
           <a href="mailto:Wipas.ananta@gmail.com" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
             <Mail className="w-6 h-6" />
           </a>
+        </div>
+        
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <ChevronDown className="w-6 h-6 text-muted-foreground" />
         </div>
       </div>
       
