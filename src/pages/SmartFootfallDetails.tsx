@@ -24,7 +24,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Real-time Event Monitoring",
       icon: <TrendingUp className="w-8 h-8" />,
-      image: "/lovable-uploads/cde00cd8-341a-4da7-b2f4-f934cc2b1dbe.png",
+      image: "/lovable-uploads/4d1d0362-7845-4d5d-9d70-593c26f0e6fa.png",
       description: "Provided near-real-time event monitoring to key stakeholders with visualized visitor trends over time and traffic flow analysis across key entry points.",
       technologies: ["Real-time Analytics", "Dashboard Systems", "Monitoring Tools"],
       challenges: "Maintaining system responsiveness while delivering timely insights",
