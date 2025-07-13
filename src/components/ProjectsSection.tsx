@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Lock } from "lucide-react";
 import dataEngineeringIllustration from "@/assets/data-engineering-illustration.jpg";
 import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
 import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
@@ -70,7 +70,8 @@ const ProjectsSection = () => {
       demoUrl: "/project/ai-automation-cost-estimation",
       githubUrl: "https://github.com/example/ai-automation-cost-estimation",
       imageUrl: taskManagementIllustration,
-      level: 'entry' as const
+      level: 'entry' as const,
+      locked: true
     }
   ];
 
@@ -140,48 +141,74 @@ const ProjectsSection = () => {
               <CarouselContent className="-ml-2 md:-ml-4">
               {filteredProjects.map((project, index) => (
                 <CarouselItem key={project.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
-                  <div className="project-card animate-fade-in-up h-full flex flex-col" style={{animationDelay: `${index * 0.1}s`}}>
-                    <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-secondary/50">
+                  <div className={`project-card animate-fade-in-up h-full flex flex-col ${project.locked ? 'opacity-60' : ''}`} style={{animationDelay: `${index * 0.1}s`}}>
+                    <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-secondary/50 relative">
                       <img 
                         src={project.imageUrl} 
                         alt={project.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        className={`w-full h-full object-cover transition-transform duration-300 ${project.locked ? 'filter grayscale' : 'hover:scale-105'}`}
                       />
+                      {project.locked && (
+                        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                          <div className="text-center text-white">
+                            <Lock className="w-8 h-8 mx-auto mb-2" />
+                            <p className="text-sm font-medium">Coming Soon</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
                     
-                    <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                    <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                      {project.title}
+                      {project.locked && <Lock className="w-4 h-4 text-muted-foreground" />}
+                    </h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                       {project.description}
                     </p>
                     
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="secondary" className="skill-badge text-xs">
+                        <Badge key={tech} variant="secondary" className={`skill-badge text-xs ${project.locked ? 'opacity-60' : ''}`}>
                           {tech}
                         </Badge>
                       ))}
                     </div>
                     
                     <div className="flex gap-3 mt-auto">
-                      <Button size="sm" asChild className="flex-1">
-                        {project.demoUrl.startsWith('/') ? (
-                          <a href={project.demoUrl}>
-                            <ExternalLink className="w-3 h-3 mr-1" />
-                            More
-                          </a>
-                        ) : (
-                          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="w-3 h-3 mr-1" />
-                            More
-                          </a>
-                        )}
-                      </Button>
-                      <Button size="sm" variant="outline" asChild>
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-3 h-3 mr-1" />
-                          Code
-                        </a>
-                      </Button>
+                      {project.locked ? (
+                        <>
+                          <Button size="sm" disabled className="flex-1 cursor-not-allowed">
+                            <Lock className="w-3 h-3 mr-1" />
+                            Locked
+                          </Button>
+                          <Button size="sm" variant="outline" disabled className="cursor-not-allowed">
+                            <Lock className="w-3 h-3 mr-1" />
+                            Locked
+                          </Button>
+                        </>
+                      ) : (
+                        <>
+                          <Button size="sm" asChild className="flex-1">
+                            {project.demoUrl.startsWith('/') ? (
+                              <a href={project.demoUrl}>
+                                <ExternalLink className="w-3 h-3 mr-1" />
+                                More
+                              </a>
+                            ) : (
+                              <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="w-3 h-3 mr-1" />
+                                More
+                              </a>
+                            )}
+                          </Button>
+                          <Button size="sm" variant="outline" asChild>
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                              <Github className="w-3 h-3 mr-1" />
+                              Code
+                            </a>
+                          </Button>
+                        </>
+                      )}
                     </div>
                   </div>
                 </CarouselItem>
