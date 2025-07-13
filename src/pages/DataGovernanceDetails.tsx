@@ -31,7 +31,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "OpenMetadata Implementation",
       icon: <Database className="w-8 h-8" />,
-      image: dataGovernanceIllustration,
+      image: "/lovable-uploads/8a59d69c-a3a9-4c05-8957-d3f5205ba09f.png",
       description: "To operationalize our hybrid governance strategy, we adopted OpenMetadata as the core tool for managing metadata, ownership, lineage, and policy enforcement with full data mapping capabilities.",
       technologies: ["OpenMetadata", "Data Lineage", "Metadata Management"],
       challenges: "Implementing comprehensive metadata management across diverse systems",
