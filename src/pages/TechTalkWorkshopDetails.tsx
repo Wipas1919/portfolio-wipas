@@ -45,7 +45,7 @@ const TechTalkWorkshopDetails = () => {
       technologies: ["Support Materials", "Self-paced Learning", "Knowledge Base", "Continuous Support"],
       challenges: "Establishing sustainable adoption and reducing reliance on centralized data teams",
       solution: "Created comprehensive guides and follow-up resources for ongoing self-service analytics development",
-      image: techTalkPhase4
+      image: "/lovable-uploads/b0d5f0c4-d1c8-414e-9bc6-4ecbad703eb5.png"
     }
   ];
 
