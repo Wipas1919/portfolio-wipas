@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Lock } from "lucide-react";
-import dataEngineeringCover from "@/assets/data-engineering-cover.png";
+import dataEngineeringCover from "@/assets/data-engineering-cover.jpg";
 import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
 import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
 import aiContentIllustration from "@/assets/ai-content-illustration.jpg";
