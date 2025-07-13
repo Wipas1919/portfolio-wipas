@@ -7,36 +7,36 @@ import { Link } from "react-router-dom";
 const DataGovernanceDetails = () => {
   const journeySteps = [
     {
-      phase: "Governance Framework Design",
+      phase: "Data Governance Mindset & Model Selection",
       icon: <Shield className="w-8 h-8" />,
-      description: "Established comprehensive data governance framework with clear policies, roles, and responsibilities for data stewardship across the organization.",
-      technologies: ["OpenMetadata", "Data Governance Framework", "Policy Design"],
-      challenges: "Defining clear governance policies without hindering business agility",
-      solution: "Created flexible governance framework with automated policy enforcement"
+      description: "At the early stage of building a data platform within the MICE business context, we explored three organizational data models and chose a Hybrid approach that combines central governance standards with decentralized execution at the business unit level.",
+      technologies: ["Data Governance Framework", "Organizational Design", "Policy Planning"],
+      challenges: "Balancing security, flexibility, and business alignment in governance structure",
+      solution: "Implemented Hybrid model combining strengths of centralized governance with decentralized execution"
     },
     {
-      phase: "Metadata Management & Discovery",
-      icon: <Database className="w-8 h-8" />,
-      description: "Implemented OpenMetadata platform for centralized metadata management, data lineage tracking, and automated data discovery across all systems.",
-      technologies: ["OpenMetadata", "Data Lineage", "Elasticsearch"],
-      challenges: "Integrating diverse data sources with consistent metadata standards",
-      solution: "Built automated metadata ingestion pipelines with standardized schemas"
-    },
-    {
-      phase: "Stakeholder Collaboration Platform",
+      phase: "Cultural Transformation & Mindset Shift",
       icon: <Users className="w-8 h-8" />,
-      description: "Developed collaborative workflows enabling data owners, stewards, and consumers to work together effectively on data governance initiatives.",
-      technologies: ["React", "Workflow Engine", "Role-Based Access"],
-      challenges: "Facilitating communication between technical and business stakeholders",
-      solution: "Created intuitive interfaces with automated workflow notifications"
+      description: "Implementing hybrid data governance required a cultural shift where IT moves from support function to strategic partner, data literacy becomes organization-wide, and business units own their data while being supported by tech governance.",
+      technologies: ["Change Management", "Training Programs", "Cultural Framework"],
+      challenges: "Changing organizational mindset from traditional IT support to strategic partnership",
+      solution: "Developed comprehensive training and cultural transformation programs"
     },
     {
-      phase: "Quality Monitoring & Compliance",
+      phase: "OpenMetadata Implementation",
+      icon: <Database className="w-8 h-8" />,
+      description: "To operationalize our hybrid governance strategy, we adopted OpenMetadata as the core tool for managing metadata, ownership, lineage, and policy enforcement with full data mapping capabilities.",
+      technologies: ["OpenMetadata", "Data Lineage", "Metadata Management"],
+      challenges: "Implementing comprehensive metadata management across diverse systems",
+      solution: "Built automated metadata ingestion with full lineage mapping and governance controls"
+    },
+    {
+      phase: "Governance Operationalization",
       icon: <Settings className="w-8 h-8" />,
-      description: "Established automated data quality monitoring, compliance reporting, and governance metrics to ensure ongoing data reliability and regulatory adherence.",
-      technologies: ["Apache Kafka", "Data Quality Rules", "Compliance Dashboard"],
-      challenges: "Maintaining data quality standards across distributed systems",
-      solution: "Implemented real-time quality monitoring with automated alerts"
+      description: "Established operational governance processes with clear ownership models, policy enforcement mechanisms, and compliance monitoring to ensure sustainable data governance practices.",
+      technologies: ["Policy Enforcement", "Compliance Monitoring", "Governance Metrics"],
+      challenges: "Making governance policies actionable and measurable in day-to-day operations",
+      solution: "Created automated governance workflows with real-time monitoring and compliance reporting"
     }
   ];
 
@@ -59,11 +59,11 @@ const DataGovernanceDetails = () => {
               <span className="gradient-text">Data Governance (From scratch)</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Building comprehensive data governance framework with OpenMetadata - enabling stakeholder collaboration and ensuring data quality across the enterprise
+              Data Governance Mindset & Structural Evolution - Building sustainable and scalable Data Governance model that balances security, flexibility, and business alignment in the MICE business context
             </p>
             
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["OpenMetadata", "Python", "Apache Kafka", "PostgreSQL", "React"].map((tech) => (
+              {["Data Governance", "Metadata Management", "System Architecture Planning", "Policy & Compliance"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="skill-badge px-4 py-2">
                   {tech}
                 </Badge>
@@ -88,10 +88,10 @@ const DataGovernanceDetails = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">The Challenge</h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Organizations struggle with data chaos - unclear ownership, inconsistent quality, 
-              and lack of collaboration between data stakeholders. This project establishes 
-              a comprehensive governance framework using OpenMetadata to create transparency, 
-              accountability, and collaboration in data management.
+              At the early stage of building a data platform within the MICE business context, the foundational 
+              challenge centered around designing a sustainable and scalable Data Governance model that balanced 
+              security, flexibility, and business alignment. We explored three organizational data models: 
+              Decentralized, Centralized, and Hybrid - ultimately choosing the Hybrid approach.
             </p>
           </div>
         </div>
