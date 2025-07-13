@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Github, Users, Presentation, BarChart3, Target, Lightbulb, BookOpen } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { ArrowLeft, Github, Users, Presentation, BarChart3, Target, Lightbulb, BookOpen, Expand } from "lucide-react";
 import { Link } from "react-router-dom";
 import techTalkPhase1 from "@/assets/tech-talk-phase1.jpg";
 import techTalkPhase2 from "@/assets/tech-talk-phase2.jpg";
@@ -162,13 +163,27 @@ const TechTalkWorkshopDetails = () => {
                     </div>
                     
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
-                      <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-                        <img 
-                          src={step.image} 
-                          alt={`${step.phase} - Phase ${index + 1}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <div className="relative group cursor-pointer">
+                            <img 
+                              src={step.image} 
+                              alt={`${step.phase} - Phase ${index + 1}`}
+                              className="aspect-video w-full object-cover rounded-lg shadow-lg group-hover:opacity-90 transition-opacity"
+                            />
+                            <div className="absolute top-3 right-3 bg-black/60 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <Expand className="w-4 h-4 text-white" />
+                            </div>
+                          </div>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl w-full">
+                          <img 
+                            src={step.image} 
+                            alt={`${step.phase} - Phase ${index + 1}`}
+                            className="w-full h-auto rounded-lg"
+                          />
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </div>
                 </CardContent>
