@@ -20,7 +20,7 @@ const ExperienceSection = () => {
     type: "Full-time",
     description: "Coordinated design solution projects, managing data analysis requirements and ensuring project delivery aligned with business objectives.",
     achievements: ["Successfully coordinated multiple design solution projects", "Implemented data analysis processes for project optimization", "Collaborated with cross-functional teams to deliver solutions", "Managed project timelines and stakeholder communications"],
-    technologies: ["Project Management", "Data Analysis", "Excel", "Business Analysis", "Stakeholder Management"]
+    technologies: ["Project Management", "Data Analysis", "Excel", "Business Analysis", "Stakeholder Management", "Requirement Gathering & Documentation", "Cross-functional Communication"]
   }, {
     id: 3,
     company: "King Mongkut University of Technology North Bangkok",
