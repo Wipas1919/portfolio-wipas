@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Lock } from "lucide-react";
-import dataEngineeringIllustration from "@/assets/data-engineering-illustration.jpg";
+import dataEngineeringCover from "@/assets/data-engineering-cover.png";
 import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
 import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
 import aiContentIllustration from "@/assets/ai-content-illustration.jpg";
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       technologies: ["Python", "Apache Airflow", "PostgreSQL", "Docker", "Tableau"],
       demoUrl: "/project/data-engineering-journey",
       githubUrl: "https://github.com/Wipas1919/data-engineering-journey",
-      imageUrl: dataEngineeringIllustration,
+      imageUrl: dataEngineeringCover,
       level: 'entry' as const
     },
     {
