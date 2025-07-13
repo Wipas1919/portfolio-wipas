@@ -5,6 +5,7 @@ import dataEngineeringFilter from "@/assets/data-engineering-filter.jpg";
 import dataGovernanceTeam from "@/assets/data-governance-team.jpg";
 import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
 import aiContentIllustration from "@/assets/ai-content-illustration.jpg";
+import aiAutomationCost from "@/assets/ai-automation-cost.jpg";
 import { 
   Carousel, 
   CarouselContent, 
@@ -69,7 +70,7 @@ const ProjectsSection = () => {
       technologies: ["Dify AI", "Chat Interface", "Automation", "Cost Analysis", "Time Optimization"],
       demoUrl: "/project/ai-automation-cost-estimation",
       githubUrl: "https://github.com/example/ai-automation-cost-estimation",
-      imageUrl: taskManagementIllustration,
+      imageUrl: aiAutomationCost,
       level: 'entry' as const,
       locked: true
     }
