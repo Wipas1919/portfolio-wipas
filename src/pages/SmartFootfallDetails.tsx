@@ -7,36 +7,36 @@ import { Link } from "react-router-dom";
 const SmartFootfallDetails = () => {
   const journeySteps = [
     {
-      phase: "Sensor Data Ingestion",
+      phase: "Data Accessibility Enhancement",
       icon: <Activity className="w-8 h-8" />,
-      description: "Built real-time data ingestion pipeline from IoT sensors, cameras, and entry/exit systems to capture visitor movement patterns across multiple venues during events.",
-      technologies: ["Python", "Apache Kafka", "IoT Sensors"],
-      challenges: "Handling high-frequency sensor data and ensuring real-time processing",
-      solution: "Implemented stream processing with Kafka for low-latency data ingestion"
+      description: "Enhanced data accessibility for operations and decision-making by integrating data from IoT sensors and intelligent monitoring systems. Combined external data sources including environmental and scheduling data.",
+      technologies: ["IoT Sensors", "Data Integration", "Real-time Systems"],
+      challenges: "Consolidating data from multiple sources with varying refresh rates",
+      solution: "Enabled automated data refresh at defined intervals with unified data pipeline"
     },
     {
-      phase: "Real-time Data Processing",
+      phase: "Real-time Event Monitoring",
       icon: <TrendingUp className="w-8 h-8" />,
-      description: "Designed streaming analytics pipeline to process footfall data in near real-time, calculating crowd density, movement patterns, and occupancy metrics.",
-      technologies: ["Apache Kafka", "InfluxDB", "Stream Processing"],
-      challenges: "Processing large volumes of time-series data with minimal latency",
-      solution: "Used InfluxDB for time-series optimization and efficient aggregations"
+      description: "Provided near-real-time event monitoring to key stakeholders with visualized visitor trends over time and traffic flow analysis across key entry points.",
+      technologies: ["Real-time Analytics", "Dashboard Systems", "Monitoring Tools"],
+      challenges: "Maintaining system responsiveness while delivering timely insights",
+      solution: "Implemented optimized data processing for near-real-time updates"
     },
     {
-      phase: "Geospatial Analytics",
+      phase: "Performance Analytics & Comparison",
       icon: <MapPin className="w-8 h-8" />,
-      description: "Implemented location-based analytics to track visitor flow patterns, identify congestion points, and optimize venue layout for better crowd management.",
-      technologies: ["PostGIS", "Geospatial Analysis", "React Maps"],
-      challenges: "Mapping sensor locations to meaningful venue zones",
-      solution: "Created dynamic zone mapping with visual heat map overlays"
+      description: "Monitored real-time occupancy and usage patterns while comparing performance metrics with historical events. Analyzed demographic insights from integrated data sources.",
+      technologies: ["Historical Analysis", "Performance Metrics", "Demographic Analytics"],
+      challenges: "Creating meaningful comparisons across different event types and timeframes",
+      solution: "Developed normalized benchmarking system for historical comparison"
     },
     {
-      phase: "Interactive Dashboard",
+      phase: "Operational Efficiency Optimization",
       icon: <Users className="w-8 h-8" />,
-      description: "Developed responsive real-time dashboard with interactive visualizations showing live footfall metrics, crowd density maps, and predictive analytics for event organizers.",
-      technologies: ["React", "D3.js", "WebSocket", "Chart.js"],
-      challenges: "Creating responsive visualizations for real-time data updates",
-      solution: "Implemented WebSocket connections with optimized chart rendering"
+      description: "Improved operational efficiency across visitor management, parking, and staffing through comprehensive dashboard insights and performance benchmarking against previous events.",
+      technologies: ["Operations Analytics", "Resource Planning", "Efficiency Metrics"],
+      challenges: "Designing visual narratives to support both real-time operations and strategic reviews",
+      solution: "Created dual-purpose dashboard supporting both operational and strategic decision-making"
     }
   ];
 
@@ -56,14 +56,14 @@ const SmartFootfallDetails = () => {
           
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="gradient-text">Smart Footfall Dashboard</span>
+              <span className="gradient-text">Smart Footfall Dashboard for Event Insight & Optimization</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Near real-time footfall analytics platform providing comprehensive visitor traffic insights during multiday events with advanced crowd density monitoring
+              Development of a real-time footfall dashboard tailored for a large-scale exhibition venue. Providing comprehensive view of visitor traffic during multi-day international trade events using data from various integrated sources.
             </p>
             
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["Python", "Apache Kafka", "InfluxDB", "React", "D3.js"].map((tech) => (
+              {["Segmentation", "Customer Behavior", "Analytics"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="skill-badge px-4 py-2">
                   {tech}
                 </Badge>
@@ -86,12 +86,12 @@ const SmartFootfallDetails = () => {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">The Challenge</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Objectives</h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Event organizers and venue managers need real-time insights into visitor movement patterns 
-              to optimize crowd flow, ensure safety, and enhance visitor experience. Traditional counting 
-              methods are inadequate for large-scale events requiring instant decision-making capabilities 
-              and detailed analytics across multiple zones.
+              This project showcased the development of a real-time footfall dashboard tailored for a large-scale exhibition venue. 
+              The objectives were to enhance data accessibility for operations and decision-making, provide near-real-time event monitoring 
+              to key stakeholders, compare performance metrics with historical events, and improve operational efficiency across visitor 
+              management, parking, and staffing.
             </p>
           </div>
         </div>
