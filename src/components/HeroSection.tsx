@@ -31,7 +31,7 @@ const HeroSection = () => {
             <Github className="w-6 h-6" />
           </a>
           <a href="https://www.linkedin.com/in/wipas-ananta" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
-            <Linkedin className="w-6 h-6" />
+            
           </a>
           <a href="mailto:Wipas.ananta@gmail.com" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
             <Mail className="w-6 h-6" />
@@ -47,16 +47,6 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-20 w-16 h-16 bg-secondary/20 rounded-full animate-float" style={{
       animationDelay: '2s'
     }} />
-      
-      {/* Scroll down arrow */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors cursor-pointer">
-          <span className="text-sm mb-2 font-medium">Scroll Down</span>
-          <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-current rounded-full mt-2 animate-pulse" />
-          </div>
-        </div>
-      </div>
     </section>;
 };
 export default HeroSection;
