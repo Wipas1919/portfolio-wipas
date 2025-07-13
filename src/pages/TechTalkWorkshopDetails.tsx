@@ -3,6 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Github, Users, Presentation, BarChart3, Target, Lightbulb, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
+import techTalkPhase1 from "@/assets/tech-talk-phase1.jpg";
+import techTalkPhase2 from "@/assets/tech-talk-phase2.jpg";
+import techTalkPhase3 from "@/assets/tech-talk-phase3.jpg";
+import techTalkPhase4 from "@/assets/tech-talk-phase4.jpg";
 
 const TechTalkWorkshopDetails = () => {
   const journeySteps = [
@@ -12,7 +16,8 @@ const TechTalkWorkshopDetails = () => {
       description: "Served as co-speaker in internal training session focused on emerging technology trends and AI adaptation. Shared research and insights in digestible, engaging format to help employees understand technology integration in daily operations.",
       technologies: ["Public Speaking", "AI Research", "Technology Trends", "Interactive Demos"],
       challenges: "Making complex technology concepts accessible to employees across departments",
-      solution: "Assisted in live demos to help colleagues visualize how emerging tools can be applied in real-world business scenarios"
+      solution: "Assisted in live demos to help colleagues visualize how emerging tools can be applied in real-world business scenarios",
+      image: techTalkPhase1
     },
     {
       phase: "Power BI Training Design & Planning",
@@ -20,7 +25,8 @@ const TechTalkWorkshopDetails = () => {
       description: "Designed training flow and materials for Power BI basic training series. Organized small groups (5-10 people per session) segmented by department for 2-3 hour hands-on workshops.",
       technologies: ["Training Design", "Power BI Desktop", "Curriculum Planning", "Department Segmentation"],
       challenges: "Supporting organization's shift toward self-service analytics for non-technical team members",
-      solution: "Created modular training structure tailored to each department's specific context and needs"
+      solution: "Created modular training structure tailored to each department's specific context and needs",
+      image: techTalkPhase2
     },
     {
       phase: "Hands-on Workshop Facilitation",
@@ -28,7 +34,8 @@ const TechTalkWorkshopDetails = () => {
       description: "Led live demonstrations and step-by-step tutorials enabling participants to understand Power BI structure, navigate dashboards, perform basic data transformation using Power Query, and create simple visualizations.",
       technologies: ["Power BI Desktop", "Power Query", "Data Visualization", "Live Teaching"],
       challenges: "Ensuring participants could apply fundamental Power BI skills to their own team needs",
-      solution: "Used sample datasets and interactive exercises with real-time troubleshooting for common beginner issues"
+      solution: "Used sample datasets and interactive exercises with real-time troubleshooting for common beginner issues",
+      image: techTalkPhase3
     },
     {
       phase: "Knowledge Transfer & Sustainable Adoption",
@@ -36,7 +43,8 @@ const TechTalkWorkshopDetails = () => {
       description: "Provided follow-up support materials and established scalable training structure for future advanced stages. Helped teams gain confidence in exploring and interpreting data while reducing dependency on centralized reporting.",
       technologies: ["Support Materials", "Self-paced Learning", "Knowledge Base", "Continuous Support"],
       challenges: "Establishing sustainable adoption and reducing reliance on centralized data teams",
-      solution: "Created comprehensive guides and follow-up resources for ongoing self-service analytics development"
+      solution: "Created comprehensive guides and follow-up resources for ongoing self-service analytics development",
+      image: techTalkPhase4
     }
   ];
 
@@ -154,15 +162,12 @@ const TechTalkWorkshopDetails = () => {
                     </div>
                     
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
-                      <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 mx-auto mb-4 p-4 rounded-full bg-background/50">
-                            {step.icon}
-                          </div>
-                          <p className="text-sm text-muted-foreground">
-                            {step.phase} Diagram
-                          </p>
-                        </div>
+                      <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+                        <img 
+                          src={step.image} 
+                          alt={`${step.phase} - Phase ${index + 1}`}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                     </div>
                   </div>
