@@ -24,16 +24,7 @@ const HeroSection = () => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up">
-          <Button size="lg" className="glow-effect px-8 py-4 text-lg font-semibold">
-            <ExternalLink className="w-5 h-5 mr-2" />
-            View My Work
-          </Button>
-          <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
-            <Mail className="w-5 h-5 mr-2" />
-            Get In Touch
-          </Button>
-        </div>
+        
         
         <div className="flex justify-center gap-6 animate-fade-in-up">
           <a href="https://github.com/Wipas1919" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
