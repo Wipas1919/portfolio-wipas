@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowLeft, Github, Shield, Users, Database, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import dataGovernanceCover from "@/assets/data-governance-cover.jpg";
 import dataGovernanceTeam from "@/assets/data-governance-team.jpg";
 import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
@@ -162,11 +164,22 @@ const DataGovernanceDetails = () => {
                     </div>
                     
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
-                      <img 
-                        src={step.image} 
-                        alt={`${step.phase} illustration`}
-                        className="aspect-video w-full object-cover rounded-lg shadow-lg"
-                      />
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <img 
+                            src={step.image} 
+                            alt={`${step.phase} illustration`}
+                            className="aspect-video w-full object-cover rounded-lg shadow-lg cursor-pointer hover:opacity-90 transition-opacity"
+                          />
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl w-full">
+                          <img 
+                            src={step.image} 
+                            alt={`${step.phase} illustration`}
+                            className="w-full h-auto rounded-lg"
+                          />
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </div>
                 </CardContent>
