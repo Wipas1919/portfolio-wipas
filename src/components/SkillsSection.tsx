@@ -10,7 +10,7 @@ const SkillsSection = () => {
     }, {
       name: "SQL/PostgreSQL",
       experience: "1+ year",
-      level: "advanced"
+      level: "intermediate"
     }, {
       name: "Apache Spark",
       experience: "1+ year",
