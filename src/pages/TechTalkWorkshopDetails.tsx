@@ -36,7 +36,7 @@ const TechTalkWorkshopDetails = () => {
       technologies: ["Power BI Desktop", "Power Query", "Data Visualization", "Live Teaching"],
       challenges: "Ensuring participants could apply fundamental Power BI skills to their own team needs",
       solution: "Used sample datasets and interactive exercises with real-time troubleshooting for common beginner issues",
-      image: techTalkPhase3
+      image: "/lovable-uploads/e79ec147-b116-43d6-967c-0a9b384dc441.png"
     },
     {
       phase: "Knowledge Transfer & Sustainable Adoption",
