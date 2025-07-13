@@ -22,7 +22,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "Cultural Transformation & Mindset Shift",
       icon: <Users className="w-8 h-8" />,
-      image: dataGovernanceTeam,
+      image: "/lovable-uploads/9ee4efde-867a-4a9d-9ac3-678662d070eb.png",
       description: "Implementing hybrid data governance required a cultural shift where IT moves from support function to strategic partner, data literacy becomes organization-wide, and business units own their data while being supported by tech governance.",
       technologies: ["Change Management", "Training Programs", "Cultural Framework"],
       challenges: "Changing organizational mindset from traditional IT support to strategic partnership",
