@@ -10,7 +10,7 @@ const ProjectDetails = () => {
       phase: "Data Collection & Ingestion",
       icon: <Database className="w-8 h-8" />,
       description: "Built robust data pipelines to collect raw data from multiple sources including APIs, databases, and file systems.",
-      technologies: ["Python", "Apache Kafka", "REST APIs"],
+      technologies: ["Python", "SQL", "REST APIs"],
       challenges: "Handling different data formats and ensuring data quality",
       solution: "Implemented data validation schemas and error handling mechanisms"
     },
@@ -18,9 +18,9 @@ const ProjectDetails = () => {
       phase: "Data Processing & Transformation",
       icon: <Workflow className="w-8 h-8" />,
       description: "Designed and implemented ETL workflows to clean, transform, and prepare data for analysis.",
-      technologies: ["Apache Airflow", "Pandas", "SQL"],
+      technologies: ["Windmill", "Pandas", "SQL"],
       challenges: "Managing complex dependencies and scheduling workflows",
-      solution: "Used Airflow DAGs for orchestration and monitoring"
+      solution: "Used Windmill for orchestration and monitoring"
     },
     {
       phase: "Data Storage & Architecture",
@@ -34,7 +34,7 @@ const ProjectDetails = () => {
       phase: "Analytics & Visualization",
       icon: <BarChart3 className="w-8 h-8" />,
       description: "Created comprehensive dashboards and reports to provide actionable insights from processed data.",
-      technologies: ["Tableau", "Python", "Business Intelligence"],
+      technologies: ["Power BI", "Python", "Business Intelligence"],
       challenges: "Making complex data accessible to stakeholders",
       solution: "Built intuitive dashboards with drill-down capabilities"
     }
@@ -63,7 +63,7 @@ const ProjectDetails = () => {
             </p>
             
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["Python", "Apache Airflow", "PostgreSQL", "Docker", "Tableau"].map((tech) => (
+              {["Python", "Windmill", "PostgreSQL", "Docker", "Tableau"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="skill-badge px-4 py-2">
                   {tech}
                 </Badge>
