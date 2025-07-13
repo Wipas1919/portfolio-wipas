@@ -33,7 +33,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Performance Analytics & Comparison",
       icon: <MapPin className="w-8 h-8" />,
-      image: dataEngineeringFilter,
+      image: "/lovable-uploads/654c3dad-1697-4004-bb4b-370c3d7a272f.png",
       description: "Monitored real-time occupancy and usage patterns while comparing performance metrics with historical events. Analyzed demographic insights from integrated data sources.",
       technologies: ["Historical Analysis", "Performance Metrics", "Demographic Analytics"],
       challenges: "Creating meaningful comparisons across different event types and timeframes",
