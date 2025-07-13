@@ -40,7 +40,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "Governance Operationalization",
       icon: <Settings className="w-8 h-8" />,
-      image: taskManagementIllustration,
+      image: "/lovable-uploads/52ada544-5080-4ed8-bffe-7106ef448114.png",
       description: "Established operational governance processes with clear ownership models, policy enforcement mechanisms, and compliance monitoring to ensure sustainable data governance practices.",
       technologies: ["Policy Enforcement", "Compliance Monitoring", "Governance Metrics"],
       challenges: "Making governance policies actionable and measurable in day-to-day operations",
