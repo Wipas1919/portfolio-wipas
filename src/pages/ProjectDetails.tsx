@@ -35,7 +35,7 @@ const ProjectDetails = () => {
   }, {
     phase: "Visualization & Insight Delivery",
     icon: <BarChart3 className="w-8 h-8" />,
-    image: projectDashboard,
+    image: "/lovable-uploads/53e74e78-786f-42c3-af5c-62b5d8c40af6.png",
     description: "Connected PostgreSQL Data Mart to Power BI, creating self-service dashboards for business units. Enabled departments to independently access and explore data while reducing dependency on Business Analytics team.",
     technologies: ["Power BI", "PostgreSQL", "DAX", "Self-Service BI"],
     challenges: "Making complex data accessible to non-technical stakeholders across departments",
