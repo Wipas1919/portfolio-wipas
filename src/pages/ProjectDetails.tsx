@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { ArrowLeft, Github, Database, BarChart3, Cloud, Workflow } from "lucide-react";
+import { ArrowLeft, Github, Database, BarChart3, Cloud, Workflow, Expand } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import dataEngineeringCover from "@/assets/data-engineering-cover.jpg";
@@ -153,11 +153,16 @@ const ProjectDetails = () => {
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
                       <Dialog>
                         <DialogTrigger asChild>
-                          <img 
-                            src={step.image} 
-                            alt={`${step.phase} illustration`}
-                            className="aspect-video w-full object-cover rounded-lg shadow-lg cursor-pointer hover:opacity-90 transition-opacity"
-                          />
+                          <div className="relative group cursor-pointer">
+                            <img 
+                              src={step.image} 
+                              alt={`${step.phase} illustration`}
+                              className="aspect-video w-full object-cover rounded-lg shadow-lg group-hover:opacity-90 transition-opacity"
+                            />
+                            <div className="absolute top-3 right-3 bg-black/60 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <Expand className="w-4 h-4 text-white" />
+                            </div>
+                          </div>
                         </DialogTrigger>
                         <DialogContent className="max-w-4xl w-full">
                           <img 
