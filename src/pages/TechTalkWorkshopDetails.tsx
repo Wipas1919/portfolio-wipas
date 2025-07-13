@@ -27,7 +27,7 @@ const TechTalkWorkshopDetails = () => {
       technologies: ["Training Design", "Power BI Desktop", "Curriculum Planning", "Department Segmentation"],
       challenges: "Supporting organization's shift toward self-service analytics for non-technical team members",
       solution: "Created modular training structure tailored to each department's specific context and needs",
-      image: "/lovable-uploads/3cefedd4-da4f-40ee-981c-571e84dcee96.png"
+      image: "/lovable-uploads/71cd8235-eca3-473e-b23a-bd41bbf9a75b.png"
     },
     {
       phase: "Hands-on Workshop Facilitation",
