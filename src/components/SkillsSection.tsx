@@ -127,15 +127,15 @@ const SkillsSection = () => {
             <h3 className="text-xl font-bold mb-4">                            Certifications</h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <span>AWS Certified Solutions Architect</span>
+                <span>Google Cloud Data Engineer Certificate</span>
                 <Badge variant="outline">2024</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>Google Cloud Professional Developer</span>
+                <span>Aws Certified Data Engineer</span>
                 <Badge variant="outline">2023</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>MongoDB Certified Developer</span>
+                <span>Azure Data Engineer Certification</span>
                 <Badge variant="outline">2023</Badge>
               </div>
             </div>
