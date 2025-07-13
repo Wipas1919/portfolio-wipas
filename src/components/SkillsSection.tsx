@@ -132,11 +132,11 @@ const SkillsSection = () => {
               </div>
               <div className="flex items-center justify-between">
                 <span>Aws Certified Data Engineer</span>
-                <Badge variant="outline">2023</Badge>
+                <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span>Azure Data Engineer Certification</span>
-                <Badge variant="outline">2023</Badge>
+                <Badge variant="outline">In Progress</Badge>
               </div>
             </div>
           </div>
