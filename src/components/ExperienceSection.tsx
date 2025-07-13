@@ -30,7 +30,7 @@ const ExperienceSection = () => {
     type: "Education",
     description: "Graduated in Business Administration with focus on data analysis, business intelligence, and analytical thinking. Built strong foundation in business processes and data-driven decision making.",
     achievements: ["Successfully completed Business Administration degree", "Developed strong analytical and critical thinking skills", "Gained comprehensive understanding of business processes", "Built foundation in data analysis and business intelligence"],
-    technologies: ["Business Analysis", "Excel", "Statistical Methods", "Research Methods", "Business finance", "Customer Insight", "Project Management", "Analytical Skills", "Marketing Strategy", "Project Management Office (PMO)"]
+    technologies: ["Business Analysis", "Statistical Methods", "Research Methods", "Business finance", "Customer Insight", "Project Management", "Analytical Skills", "Marketing Strategy", "Project Management Office (PMO)", "Problem Solving Skills"]
   }];
   return <section id="experience" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
