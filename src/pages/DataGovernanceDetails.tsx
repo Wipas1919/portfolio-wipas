@@ -13,7 +13,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "Data Governance Mindset & Model Selection",
       icon: <Shield className="w-8 h-8" />,
-      image: dataGovernanceCover,
+      image: "/lovable-uploads/b7f27b21-d89e-4c3d-8801-cad7ec810126.png",
       description: "At the early stage of building a data platform within the MICE business context, we explored three organizational data models and chose a Hybrid approach that combines central governance standards with decentralized execution at the business unit level.",
       technologies: ["Data Governance Framework", "Organizational Design", "Policy Planning"],
       challenges: "Balancing security, flexibility, and business alignment in governance structure",
