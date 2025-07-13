@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Lock } from "lucide-react";
 import dataEngineeringFilter from "@/assets/data-engineering-filter.jpg";
-import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
+import dataGovernanceCover from "@/assets/data-governance-cover.jpg";
 import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
 import aiContentIllustration from "@/assets/ai-content-illustration.jpg";
 import { 
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
       technologies: ["OpenMetadata", "Python", "Apache Kafka", "PostgreSQL", "React"],
       demoUrl: "/project/data-governance",
       githubUrl: "https://github.com/example/data-governance",
-      imageUrl: dataGovernanceIllustration,
+      imageUrl: dataGovernanceCover,
       level: 'entry' as const
     },
     {
