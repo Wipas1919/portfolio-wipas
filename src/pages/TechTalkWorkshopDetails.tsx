@@ -18,7 +18,7 @@ const TechTalkWorkshopDetails = () => {
       technologies: ["Public Speaking", "AI Research", "Technology Trends", "Interactive Demos"],
       challenges: "Making complex technology concepts accessible to employees across departments",
       solution: "Assisted in live demos to help colleagues visualize how emerging tools can be applied in real-world business scenarios",
-      image: techTalkPhase1
+      image: "/lovable-uploads/e6f0ba3e-8dba-458b-9f1b-d4ddead259f4.png"
     },
     {
       phase: "Power BI Training Design & Planning",
