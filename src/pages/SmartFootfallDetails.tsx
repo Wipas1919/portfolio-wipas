@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Github, Users, TrendingUp, Activity, MapPin } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { ArrowLeft, Github, Users, TrendingUp, Activity, MapPin, Expand } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import aiContentIllustration from "@/assets/ai-content-illustration.jpg";
+import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
+import dataEngineeringFilter from "@/assets/data-engineering-filter.jpg";
+import projectDashboard from "@/assets/project-dashboard.jpg";
 
 const SmartFootfallDetails = () => {
   const journeySteps = [
     {
       phase: "Data Accessibility Enhancement",
       icon: <Activity className="w-8 h-8" />,
+      image: aiContentIllustration,
       description: "Enhanced data accessibility for operations and decision-making by integrating data from IoT sensors and intelligent monitoring systems. Combined external data sources including environmental and scheduling data.",
       technologies: ["IoT Sensors", "Data Integration", "Real-time Systems"],
       challenges: "Consolidating data from multiple sources with varying refresh rates",
@@ -17,6 +24,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Real-time Event Monitoring",
       icon: <TrendingUp className="w-8 h-8" />,
+      image: taskManagementIllustration,
       description: "Provided near-real-time event monitoring to key stakeholders with visualized visitor trends over time and traffic flow analysis across key entry points.",
       technologies: ["Real-time Analytics", "Dashboard Systems", "Monitoring Tools"],
       challenges: "Maintaining system responsiveness while delivering timely insights",
@@ -25,6 +33,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Performance Analytics & Comparison",
       icon: <MapPin className="w-8 h-8" />,
+      image: dataEngineeringFilter,
       description: "Monitored real-time occupancy and usage patterns while comparing performance metrics with historical events. Analyzed demographic insights from integrated data sources.",
       technologies: ["Historical Analysis", "Performance Metrics", "Demographic Analytics"],
       challenges: "Creating meaningful comparisons across different event types and timeframes",
@@ -33,6 +42,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Operational Efficiency Optimization",
       icon: <Users className="w-8 h-8" />,
+      image: projectDashboard,
       description: "Improved operational efficiency across visitor management, parking, and staffing through comprehensive dashboard insights and performance benchmarking against previous events.",
       technologies: ["Operations Analytics", "Resource Planning", "Efficiency Metrics"],
       challenges: "Designing visual narratives to support both real-time operations and strategic reviews",
@@ -154,16 +164,27 @@ const SmartFootfallDetails = () => {
                     </div>
                     
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
-                      <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 mx-auto mb-4 p-4 rounded-full bg-background/50">
-                            {step.icon}
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <div className="relative group cursor-pointer">
+                            <img 
+                              src={step.image} 
+                              alt={`${step.phase} illustration`}
+                              className="aspect-video w-full object-cover rounded-lg shadow-lg group-hover:opacity-90 transition-opacity"
+                            />
+                            <div className="absolute top-3 right-3 bg-black/60 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <Expand className="w-4 h-4 text-white" />
+                            </div>
                           </div>
-                          <p className="text-sm text-muted-foreground">
-                            {step.phase} Analytics
-                          </p>
-                        </div>
-                      </div>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl w-full">
+                          <img 
+                            src={step.image} 
+                            alt={`${step.phase} illustration`}
+                            className="w-full h-auto rounded-lg"
+                          />
+                        </DialogContent>
+                      </Dialog>
                     </div>
                   </div>
                 </CardContent>
