@@ -14,11 +14,11 @@ const SkillsSection = () => {
     }, {
       name: "Apache Spark",
       experience: "1+ year",
-      level: "intermediate"
+      level: "basic"
     }, {
       name: "Apache Airflow",
       experience: "1+ year",
-      level: "intermediate"
+      level: "basic"
     }, {
       name: "ETL/ELT Pipelines",
       experience: "1+ year",
