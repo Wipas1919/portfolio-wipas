@@ -11,7 +11,7 @@ const ProjectDetails = () => {
   const journeySteps = [{
     phase: "Ubuntu Server & Database Foundation",
     icon: <Database className="w-8 h-8" />,
-    image: "/lovable-uploads/cf65235a-269c-4578-b60b-bbbb2bb7cc80.png",
+    image: "/lovable-uploads/1b1eb4f7-ff07-4cac-8ecf-4417a7617b37.png",
     description: "Started with a blank slate, collaborating with Infrastructure team to provision and configure an on-premises Ubuntu Server. Set up core system configurations including network security, OS installation, and backup policy compliance using container-based architecture with Portainer.",
     technologies: ["Ubuntu Server", "MySQL", "Docker", "Portainer", "DBeaver"],
     challenges: "Setting up secure infrastructure from scratch with proper network and security configurations",
