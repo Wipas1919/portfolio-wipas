@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, ChevronDown } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -36,6 +36,13 @@ const HeroSection = () => {
           <a href="mailto:Wipas.ananta@gmail.com" className="p-3 rounded-full bg-secondary/50 hover:bg-secondary transition-colors glow-effect">
             <Mail className="w-6 h-6" />
           </a>
+        </div>
+        
+        {/* Scroll indicator */}
+        <div className="flex justify-center mt-8 animate-fade-in-up">
+          <div className="animate-bounce">
+            <ChevronDown className="w-6 h-6 text-muted-foreground" />
+          </div>
         </div>
       </div>
       
