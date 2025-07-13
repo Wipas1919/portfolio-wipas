@@ -42,7 +42,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Operational Efficiency Optimization",
       icon: <Users className="w-8 h-8" />,
-      image: projectDashboard,
+      image: "/lovable-uploads/4085a502-3f47-4271-b235-a72f9e7ca472.png",
       description: "Improved operational efficiency across visitor management, parking, and staffing through comprehensive dashboard insights and performance benchmarking against previous events.",
       technologies: ["Operations Analytics", "Resource Planning", "Efficiency Metrics"],
       challenges: "Designing visual narratives to support both real-time operations and strategic reviews",
