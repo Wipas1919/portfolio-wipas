@@ -33,7 +33,7 @@ const SkillsSection = () => {
     skills: [{
       name: "Docker",
       experience: "1+ year",
-      level: "intermediate"
+      level: "basic"
     }, {
       name: "Kubernetes",
       experience: "1+ year",
@@ -41,17 +41,15 @@ const SkillsSection = () => {
     }, {
       name: "CI/CD Pipelines",
       experience: "1+ year",
-      level: "intermediate"
-    }, {
-      name: "Infrastructure as Code",
-      experience: "1+ year"
+      level: "basic"
     }, {
       name: "Git",
       experience: "1+ year",
-      level: "intermediate"
+      level: "basic"
     }, {
       name: "Linux/Unix",
-      experience: "1+ year"
+      experience: "1+ year",
+      level: "basic"
     }]
   }, {
     category: "Data Analytics & BI",
