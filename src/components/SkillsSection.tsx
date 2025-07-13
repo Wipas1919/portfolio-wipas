@@ -124,7 +124,7 @@ const SkillsSection = () => {
         {/* Certifications & Learning */}
         <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up">
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">                            Certifications</h3>
+            <h3 className="text-xl font-bold mb-4">                                            Cloud Certifications </h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span>Google Cloud Data Engineer Certificate</span>
@@ -142,18 +142,18 @@ const SkillsSection = () => {
           </div>
           
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">                      Continuous Learning</h3>
+            <h3 className="text-xl font-bold mb-4">                                         Other Certifications </h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <span>Machine Learning Specialization</span>
+                <span>Power Bi Certificate PL-300</span>
                 <Badge>In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>Kubernetes Administration</span>
+                <span>Databricks Data Engineer Associate Certification</span>
                 <Badge>In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>System Design Patterns</span>
+                <span>-</span>
                 <Badge variant="outline">Completed</Badge>
               </div>
             </div>
