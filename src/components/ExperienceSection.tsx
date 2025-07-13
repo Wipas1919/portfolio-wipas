@@ -10,7 +10,7 @@ const ExperienceSection = () => {
     type: "Full-time",
     description: "Leading business analytics initiatives to drive data-driven decision making across the organization. Developing comprehensive analytics solutions and business intelligence frameworks.",
     achievements: ["Currently developing advanced analytics frameworks for business optimization", "Implementing data-driven strategies for organizational growth", "Building comprehensive business intelligence dashboards", "Leading cross-functional analytics projects"],
-    technologies: ["Power BI", "Python", "SQL", "Excel", "Statistical Analysis", "Business Intelligence", "ETL/ELT", "DevOps & Infra", "Data Modeling & Governance", "Version Control & Collaboration", "Requirement Gathering & Documentation", "Cross-functional Communication"]
+    technologies: ["Power BI", "Python", "SQL", "Excel", "Statistical Analysis", "Business Intelligence", "Data Engineering"]
   }, {
     id: 2,
     company: "stiid co. ltd",
@@ -20,7 +20,7 @@ const ExperienceSection = () => {
     type: "Full-time",
     description: "Coordinated design solution projects, managing data analysis requirements and ensuring project delivery aligned with business objectives.",
     achievements: ["Successfully coordinated multiple design solution projects", "Implemented data analysis processes for project optimization", "Collaborated with cross-functional teams to deliver solutions", "Managed project timelines and stakeholder communications"],
-    technologies: ["Project Management", "Data Analysis", "Excel", "Business Analysis", "Stakeholder Management", "Requirement Gathering & Documentation", "Cross-functional Communication"]
+    technologies: ["Project Management", "Data Analysis", "Excel", "Business Analysis", "Stakeholder Management"]
   }, {
     id: 3,
     company: "King Mongkut University of Technology North Bangkok",
