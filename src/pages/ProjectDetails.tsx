@@ -27,7 +27,7 @@ const ProjectDetails = () => {
   }, {
     phase: "Data Mart for Analytics Consumption",
     icon: <Cloud className="w-8 h-8" />,
-    image: dataGovernanceCover,
+    image: "/lovable-uploads/42b84a68-5037-43a0-b117-e5e87504e7c0.png",
     description: "Created curated Data Marts as purpose-built datasets tailored to analytical needs of business units. Implemented data governance with PII segregation, anonymization, and compliance measures while ensuring analytics-ready outputs.",
     technologies: ["PostgreSQL", "Data Governance", "PII Protection", "Windmill"],
     challenges: "Balancing data accessibility with security and compliance requirements",
