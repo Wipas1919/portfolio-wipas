@@ -7,36 +7,36 @@ import { Link } from "react-router-dom";
 const TechTalkWorkshopDetails = () => {
   const journeySteps = [
     {
-      phase: "Workshop Preparation & Planning",
-      icon: <Target className="w-8 h-8" />,
-      description: "Designed comprehensive curriculum focusing on emerging technology trends and Power BI fundamentals to address organizational needs.",
-      technologies: ["Curriculum Design", "Training Materials", "Power BI", "Presentation Tools"],
-      challenges: "Balancing technical depth with accessibility for diverse skill levels",
-      solution: "Created modular content with progressive complexity and hands-on exercises"
-    },
-    {
-      phase: "Technology Trends Presentation",
+      phase: "Technology Trends & AI Era Insights",
       icon: <Lightbulb className="w-8 h-8" />,
-      description: "Delivered engaging presentations on emerging technologies and their business impact to enhance organizational tech literacy.",
-      technologies: ["Public Speaking", "Tech Research", "Visual Aids", "Interactive Demos"],
-      challenges: "Making complex technical concepts accessible to non-technical audience",
-      solution: "Used real-world examples and interactive demonstrations"
+      description: "Served as co-speaker in internal training session focused on emerging technology trends and AI adaptation. Shared research and insights in digestible, engaging format to help employees understand technology integration in daily operations.",
+      technologies: ["Public Speaking", "AI Research", "Technology Trends", "Interactive Demos"],
+      challenges: "Making complex technology concepts accessible to employees across departments",
+      solution: "Assisted in live demos to help colleagues visualize how emerging tools can be applied in real-world business scenarios"
     },
     {
-      phase: "Power BI Training & Hands-on Workshop",
+      phase: "Power BI Training Design & Planning",
+      icon: <Target className="w-8 h-8" />,
+      description: "Designed training flow and materials for Power BI basic training series. Organized small groups (5-10 people per session) segmented by department for 2-3 hour hands-on workshops.",
+      technologies: ["Training Design", "Power BI Desktop", "Curriculum Planning", "Department Segmentation"],
+      challenges: "Supporting organization's shift toward self-service analytics for non-technical team members",
+      solution: "Created modular training structure tailored to each department's specific context and needs"
+    },
+    {
+      phase: "Hands-on Workshop Facilitation",
       icon: <BarChart3 className="w-8 h-8" />,
-      description: "Conducted practical Power BI training sessions with real datasets to build self-service analytics capabilities.",
-      technologies: ["Power BI Desktop", "Data Modeling", "DAX", "Visualization Best Practices"],
-      challenges: "Ensuring participants could apply skills to their specific use cases",
-      solution: "Provided practice datasets relevant to participants' departments"
+      description: "Led live demonstrations and step-by-step tutorials enabling participants to understand Power BI structure, navigate dashboards, perform basic data transformation using Power Query, and create simple visualizations.",
+      technologies: ["Power BI Desktop", "Power Query", "Data Visualization", "Live Teaching"],
+      challenges: "Ensuring participants could apply fundamental Power BI skills to their own team needs",
+      solution: "Used sample datasets and interactive exercises with real-time troubleshooting for common beginner issues"
     },
     {
-      phase: "Knowledge Transfer & Follow-up",
+      phase: "Knowledge Transfer & Sustainable Adoption",
       icon: <BookOpen className="w-8 h-8" />,
-      description: "Established ongoing support system and documentation to ensure sustainable adoption of new skills and technologies.",
-      technologies: ["Documentation", "Best Practices", "Support Framework", "Knowledge Base"],
-      challenges: "Maintaining momentum after initial training completion",
-      solution: "Created comprehensive guides and established regular check-in sessions"
+      description: "Provided follow-up support materials and established scalable training structure for future advanced stages. Helped teams gain confidence in exploring and interpreting data while reducing dependency on centralized reporting.",
+      technologies: ["Support Materials", "Self-paced Learning", "Knowledge Base", "Continuous Support"],
+      challenges: "Establishing sustainable adoption and reducing reliance on centralized data teams",
+      solution: "Created comprehensive guides and follow-up resources for ongoing self-service analytics development"
     }
   ];
 
@@ -59,11 +59,11 @@ const TechTalkWorkshopDetails = () => {
               <span className="gradient-text">Internal Tech Talk & Workshop</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Empowering teams with emerging technology knowledge and Power BI skills to drive data-driven decision making
+              Co-speaker and workshop facilitator in internal training sessions focused on emerging technology trends and Power BI fundamentals to support the organization's shift toward self-service analytics
             </p>
             
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["Power BI", "Data Analytics", "Training", "Workshop", "Self-Service Analytics"].map((tech) => (
+              {["Public Speaking", "Workshop Facilitation", "Employee Training", "Soft Skills Development", "Power BI", "Hands-on Learning"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="skill-badge px-4 py-2">
                   {tech}
                 </Badge>
@@ -86,11 +86,12 @@ const TechTalkWorkshopDetails = () => {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">The Challenge</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Objectives</h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Organizations often struggle with keeping pace with rapidly evolving technology trends while building 
-              internal capabilities for self-service analytics. This workshop addressed these challenges by providing 
-              practical training and insights to empower teams with modern data skills and technology awareness.
+              As part of knowledge-sharing initiative organized by HR and Business Analytics departments, I served as co-speaker 
+              and workshop facilitator to help employees understand how technology is increasingly integrated into daily operations, 
+              practically leverage these tools in the workplace, and empower non-technical team members with fundamental Power BI 
+              skills for self-service analytics and data-driven decision-making.
             </p>
           </div>
         </div>
