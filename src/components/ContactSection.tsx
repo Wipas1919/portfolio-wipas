@@ -35,9 +35,7 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Let's <span className="gradient-text">Connect</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your data into insights? Let's discuss your analytics needs or explore potential collaborations.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Interested in connecting or collaborating? Feel free to reach out, explore my online work, or download my resume to learn more.</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -119,14 +117,14 @@ const ContactSection = () => {
                   </div>
                   <h3 className="text-2xl font-bold gradient-text">Resume</h3>
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-5 my-0">
                   <div className="flex items-center gap-4 animate-fade-in-up">
                     <div className="p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                       <Download className="w-5 h-5 text-primary" />
                     </div>
                     <div className="flex-1">
                       <div className="font-semibold text-foreground py-[6px]">Professional Resume</div>
-                      <div className="text-muted-foreground">Complete experience & qualifications
+                      <div className="text-muted-foreground my-[12px]">Complete experience & qualifications
 
                     </div>
                     </div>
