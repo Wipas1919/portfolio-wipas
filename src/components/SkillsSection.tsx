@@ -75,7 +75,8 @@ const SkillsSection = () => {
       level: "intermediate"
     }, {
       name: "Business Intelligence",
-      experience: "1+ year"
+      experience: "1+ year",
+      level: "intermediate"
     }]
   }];
   const technologies = ["Python", "SQL", "PostgreSQL", "Power BI", "Tableau", "Excel", "Apache Spark", "Apache Airflow", "ETL/ELT", "AWS", "Azure", "Docker", "Apache Kafka", "MongoDB", "Statistical Analysis", "Data Modeling", "Git", "Machine Learning", "DevOps", "CI/CD", "Backend Development", "Data Infrastructure", "Kubernetes"];
