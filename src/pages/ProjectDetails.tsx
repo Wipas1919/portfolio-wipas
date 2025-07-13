@@ -3,10 +3,15 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Github, Database, BarChart3, Cloud, Workflow } from "lucide-react";
 import { Link } from "react-router-dom";
+import dataEngineeringCover from "@/assets/data-engineering-cover.jpg";
+import aiAutomationCost from "@/assets/ai-automation-cost.jpg";
+import dataGovernanceCover from "@/assets/data-governance-cover.jpg";
+import projectDashboard from "@/assets/project-dashboard.jpg";
 const ProjectDetails = () => {
   const journeySteps = [{
     phase: "Ubuntu Server & Database Foundation",
     icon: <Database className="w-8 h-8" />,
+    image: dataEngineeringCover,
     description: "Started with a blank slate, collaborating with Infrastructure team to provision and configure an on-premises Ubuntu Server. Set up core system configurations including network security, OS installation, and backup policy compliance using container-based architecture with Portainer.",
     technologies: ["Ubuntu Server", "MySQL", "Docker", "Portainer", "DBeaver"],
     challenges: "Setting up secure infrastructure from scratch with proper network and security configurations",
@@ -14,6 +19,7 @@ const ProjectDetails = () => {
   }, {
     phase: "Scalable ETL Pipeline with Windmill",
     icon: <Workflow className="w-8 h-8" />,
+    image: aiAutomationCost,
     description: "Chose Windmill as orchestration tool for building ETL workflows, offering ideal balance between functionality and simplicity. Modularized pipeline into Extract, Transform, and Load stages with built-in integrations and error tracking.",
     technologies: ["Windmill", "Python", "RESTful APIs", "ETL"],
     challenges: "Managing data extraction from diverse sources and implementing complex transformation logic",
@@ -21,6 +27,7 @@ const ProjectDetails = () => {
   }, {
     phase: "Data Mart for Analytics Consumption",
     icon: <Cloud className="w-8 h-8" />,
+    image: dataGovernanceCover,
     description: "Created curated Data Marts as purpose-built datasets tailored to analytical needs of business units. Implemented data governance with PII segregation, anonymization, and compliance measures while ensuring analytics-ready outputs.",
     technologies: ["PostgreSQL", "Data Governance", "PII Protection", "Windmill"],
     challenges: "Balancing data accessibility with security and compliance requirements",
@@ -28,6 +35,7 @@ const ProjectDetails = () => {
   }, {
     phase: "Visualization & Insight Delivery",
     icon: <BarChart3 className="w-8 h-8" />,
+    image: projectDashboard,
     description: "Connected PostgreSQL Data Mart to Power BI, creating self-service dashboards for business units. Enabled departments to independently access and explore data while reducing dependency on Business Analytics team.",
     technologies: ["Power BI", "PostgreSQL", "DAX", "Self-Service BI"],
     challenges: "Making complex data accessible to non-technical stakeholders across departments",
@@ -141,16 +149,11 @@ const ProjectDetails = () => {
                     </div>
                     
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
-                      <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 mx-auto mb-4 p-4 rounded-full bg-background/50">
-                            {step.icon}
-                          </div>
-                          <p className="text-sm text-muted-foreground">
-                            {step.phase} Diagram
-                          </p>
-                        </div>
-                      </div>
+                      <img 
+                        src={step.image} 
+                        alt={`${step.phase} illustration`}
+                        className="aspect-video w-full object-cover rounded-lg shadow-lg"
+                      />
                     </div>
                   </div>
                 </CardContent>
