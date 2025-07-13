@@ -146,11 +146,11 @@ const SkillsSection = () => {
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span>Power Bi Certificate PL-300</span>
-                <Badge>In Progress</Badge>
+                <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span>Databricks Data Engineer Associate Certification</span>
-                <Badge>In Progress</Badge>
+                <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span>-</span>
