@@ -3,12 +3,17 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Github, Shield, Users, Database, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
+import dataGovernanceCover from "@/assets/data-governance-cover.jpg";
+import dataGovernanceTeam from "@/assets/data-governance-team.jpg";
+import dataGovernanceIllustration from "@/assets/data-governance-illustration.jpg";
+import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
 
 const DataGovernanceDetails = () => {
   const journeySteps = [
     {
       phase: "Data Governance Mindset & Model Selection",
       icon: <Shield className="w-8 h-8" />,
+      image: dataGovernanceCover,
       description: "At the early stage of building a data platform within the MICE business context, we explored three organizational data models and chose a Hybrid approach that combines central governance standards with decentralized execution at the business unit level.",
       technologies: ["Data Governance Framework", "Organizational Design", "Policy Planning"],
       challenges: "Balancing security, flexibility, and business alignment in governance structure",
@@ -17,6 +22,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "Cultural Transformation & Mindset Shift",
       icon: <Users className="w-8 h-8" />,
+      image: dataGovernanceTeam,
       description: "Implementing hybrid data governance required a cultural shift where IT moves from support function to strategic partner, data literacy becomes organization-wide, and business units own their data while being supported by tech governance.",
       technologies: ["Change Management", "Training Programs", "Cultural Framework"],
       challenges: "Changing organizational mindset from traditional IT support to strategic partnership",
@@ -25,6 +31,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "OpenMetadata Implementation",
       icon: <Database className="w-8 h-8" />,
+      image: dataGovernanceIllustration,
       description: "To operationalize our hybrid governance strategy, we adopted OpenMetadata as the core tool for managing metadata, ownership, lineage, and policy enforcement with full data mapping capabilities.",
       technologies: ["OpenMetadata", "Data Lineage", "Metadata Management"],
       challenges: "Implementing comprehensive metadata management across diverse systems",
@@ -33,6 +40,7 @@ const DataGovernanceDetails = () => {
     {
       phase: "Governance Operationalization",
       icon: <Settings className="w-8 h-8" />,
+      image: taskManagementIllustration,
       description: "Established operational governance processes with clear ownership models, policy enforcement mechanisms, and compliance monitoring to ensure sustainable data governance practices.",
       technologies: ["Policy Enforcement", "Compliance Monitoring", "Governance Metrics"],
       challenges: "Making governance policies actionable and measurable in day-to-day operations",
@@ -154,16 +162,11 @@ const DataGovernanceDetails = () => {
                     </div>
                     
                     <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
-                      <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 mx-auto mb-4 p-4 rounded-full bg-background/50">
-                            {step.icon}
-                          </div>
-                          <p className="text-sm text-muted-foreground">
-                            {step.phase} Overview
-                          </p>
-                        </div>
-                      </div>
+                      <img 
+                        src={step.image} 
+                        alt={`${step.phase} illustration`}
+                        className="aspect-video w-full object-cover rounded-lg shadow-lg"
+                      />
                     </div>
                   </div>
                 </CardContent>
