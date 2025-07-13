@@ -5,79 +5,79 @@ const SkillsSection = () => {
     category: "Data Engineering",
     skills: [{
       name: "Python",
-      experience: "4+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "SQL/PostgreSQL",
-      experience: "5+ years",
+      experience: "1+ year",
       level: "advanced"
     }, {
       name: "Apache Spark",
-      experience: "3+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Apache Airflow",
-      experience: "2+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "ETL/ELT Pipelines",
-      experience: "3+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Data Modeling",
-      experience: "4+ years",
+      experience: "1+ year",
       level: "intermediate"
     }]
   }, {
     category: "DevOps & Infrastructure",
     skills: [{
       name: "Docker",
-      experience: "2+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Kubernetes",
-      experience: "1+ years",
+      experience: "1+ year",
       level: "basic"
     }, {
       name: "CI/CD Pipelines",
-      experience: "2+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Infrastructure as Code",
-      experience: "2+ years"
+      experience: "1+ year"
     }, {
       name: "Git",
-      experience: "3+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Linux/Unix",
-      experience: "3+ years"
+      experience: "1+ year"
     }]
   }, {
     category: "Data Analytics & BI",
     skills: [{
       name: "Power BI",
-      experience: "4+ years",
+      experience: "1+ year",
       level: "advanced"
     }, {
       name: "Tableau",
-      experience: "3+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Advanced Excel",
-      experience: "6+ years",
+      experience: "1+ year",
       level: "advanced"
     }, {
       name: "Statistical Analysis",
-      experience: "3+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Data Visualization",
-      experience: "4+ years",
+      experience: "1+ year",
       level: "intermediate"
     }, {
       name: "Business Intelligence",
-      experience: "4+ years"
+      experience: "1+ year"
     }]
   }];
   const technologies = ["Python", "SQL", "PostgreSQL", "Power BI", "Tableau", "Excel", "Apache Spark", "Apache Airflow", "ETL/ELT", "AWS", "Azure", "Docker", "Apache Kafka", "MongoDB", "Statistical Analysis", "Data Modeling", "Git", "Machine Learning", "DevOps", "CI/CD", "Backend Development", "Data Infrastructure", "Kubernetes"];
