@@ -19,7 +19,7 @@ const ProjectDetails = () => {
   }, {
     phase: "Scalable ETL Pipeline with Windmill",
     icon: <Workflow className="w-8 h-8" />,
-    image: aiAutomationCost,
+    image: "/lovable-uploads/b8a2b32f-f981-480f-908b-b091bf87c153.png",
     description: "Chose Windmill as orchestration tool for building ETL workflows, offering ideal balance between functionality and simplicity. Modularized pipeline into Extract, Transform, and Load stages with built-in integrations and error tracking.",
     technologies: ["Windmill", "Python", "RESTful APIs", "ETL"],
     challenges: "Managing data extraction from diverse sources and implementing complex transformation logic",
