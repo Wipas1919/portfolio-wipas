@@ -10,7 +10,7 @@ const ExperienceSection = () => {
     type: "Full-time",
     description: "Leading business analytics initiatives to drive data-driven decision making across the organization. Developing comprehensive analytics solutions and business intelligence frameworks.",
     achievements: ["Currently developing advanced analytics frameworks for business optimization", "Implementing data-driven strategies for organizational growth", "Building comprehensive business intelligence dashboards", "Leading cross-functional analytics projects"],
-    technologies: ["Power BI", "Python", "SQL", "Excel", "Statistical Analysis", "Business Intelligence", "ETL/ELT", "Requirement Gathering & Documentation", "Cross-functional Communication", "Problem Solving Skills"]
+    technologies: ["Power BI", "Python", "SQL", "Excel", "Statistical Analysis", "Business Intelligence", "ETL/ELT", "Requirement Gathering & Documentation", "Cross-functional Communication", "Problem Solving Skills", "DevOps & Infrastructure"]
   }, {
     id: 2,
     company: "stiid co. ltd",
