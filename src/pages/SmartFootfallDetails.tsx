@@ -193,7 +193,7 @@ const SmartFootfallDetails = () => {
                   <TrendingUp className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">95%</h3>
-                <p className="text-muted-foreground"><15m</p>
+                <p className="text-muted-foreground">~15m</p>
               </CardContent>
             </Card>
           </div>
