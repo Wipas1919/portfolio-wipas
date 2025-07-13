@@ -15,7 +15,7 @@ const SmartFootfallDetails = () => {
     {
       phase: "Data Accessibility Enhancement",
       icon: <Activity className="w-8 h-8" />,
-      image: "/lovable-uploads/e4d116c0-901e-45fc-adee-4e2f0267786c.png",
+      image: "/lovable-uploads/1a85cb5a-dc5e-4c75-878b-58efd68f09d3.png",
       description: "Enhanced data accessibility for operations and decision-making by integrating data from IoT sensors and intelligent monitoring systems. Combined external data sources including environmental and scheduling data.",
       technologies: ["IoT Sensors", "Data Integration", "Real-time Systems"],
       challenges: "Consolidating data from multiple sources with varying refresh rates",
