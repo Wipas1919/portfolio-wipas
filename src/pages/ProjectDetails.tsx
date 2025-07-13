@@ -3,45 +3,37 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Github, Database, BarChart3, Cloud, Workflow } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const ProjectDetails = () => {
-  const journeySteps = [
-    {
-      phase: "Data Collection & Ingestion",
-      icon: <Database className="w-8 h-8" />,
-      description: "Built robust data pipelines to collect raw data from multiple sources including APIs, databases, and file systems.",
-      technologies: ["Python", "SQL", "REST APIs"],
-      challenges: "Handling different data formats and ensuring data quality",
-      solution: "Implemented data validation schemas and error handling mechanisms"
-    },
-    {
-      phase: "Data Processing & Transformation",
-      icon: <Workflow className="w-8 h-8" />,
-      description: "Designed and implemented ETL workflows to clean, transform, and prepare data for analysis.",
-      technologies: ["Windmill", "Pandas", "SQL"],
-      challenges: "Managing complex dependencies and scheduling workflows",
-      solution: "Used Windmill for orchestration and monitoring"
-    },
-    {
-      phase: "Data Storage & Architecture",
-      icon: <Cloud className="w-8 h-8" />,
-      description: "Architected scalable data warehouse solution with optimized storage and retrieval patterns.",
-      technologies: ["PostgreSQL", "Docker", "Data Modeling"],
-      challenges: "Designing efficient database schemas for analytics",
-      solution: "Implemented star schema with proper indexing strategies"
-    },
-    {
-      phase: "Analytics & Visualization",
-      icon: <BarChart3 className="w-8 h-8" />,
-      description: "Created comprehensive dashboards and reports to provide actionable insights from processed data.",
-      technologies: ["Power BI", "Python", "Business Intelligence"],
-      challenges: "Making complex data accessible to stakeholders",
-      solution: "Built intuitive dashboards with drill-down capabilities"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const journeySteps = [{
+    phase: "Data Collection & Ingestion",
+    icon: <Database className="w-8 h-8" />,
+    description: "Built robust data pipelines to collect raw data from multiple sources including APIs, databases, and file systems.",
+    technologies: ["Python", "Apache Kafka", "REST APIs"],
+    challenges: "Handling different data formats and ensuring data quality",
+    solution: "Implemented data validation schemas and error handling mechanisms"
+  }, {
+    phase: "Data Processing & Transformation",
+    icon: <Workflow className="w-8 h-8" />,
+    description: "Designed and implemented ETL workflows to clean, transform, and prepare data for analysis.",
+    technologies: ["Apache Airflow", "Pandas", "SQL"],
+    challenges: "Managing complex dependencies and scheduling workflows",
+    solution: "Used Airflow DAGs for orchestration and monitoring"
+  }, {
+    phase: "Data Storage & Architecture",
+    icon: <Cloud className="w-8 h-8" />,
+    description: "Architected scalable data warehouse solution with optimized storage and retrieval patterns.",
+    technologies: ["PostgreSQL", "Docker", "Data Modeling"],
+    challenges: "Designing efficient database schemas for analytics",
+    solution: "Implemented star schema with proper indexing strategies"
+  }, {
+    phase: "Analytics & Visualization",
+    icon: <BarChart3 className="w-8 h-8" />,
+    description: "Created comprehensive dashboards and reports to provide actionable insights from processed data.",
+    technologies: ["Tableau", "Python", "Business Intelligence"],
+    challenges: "Making complex data accessible to stakeholders",
+    solution: "Built intuitive dashboards with drill-down capabilities"
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 px-6 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="max-w-6xl mx-auto">
@@ -63,11 +55,9 @@ const ProjectDetails = () => {
             </p>
             
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["Python", "Windmill", "PostgreSQL", "Docker", "Tableau"].map((tech) => (
-                <Badge key={tech} variant="secondary" className="skill-badge px-4 py-2">
+              {["Python", "Apache Airflow", "PostgreSQL", "Docker", "Tableau"].map(tech => <Badge key={tech} variant="secondary" className="skill-badge px-4 py-2">
                   {tech}
-                </Badge>
-              ))}
+                </Badge>)}
             </div>
             
             <div className="flex gap-4 justify-center">
@@ -108,8 +98,7 @@ const ProjectDetails = () => {
           </div>
 
           <div className="space-y-12">
-            {journeySteps.map((step, index) => (
-              <Card key={index} className="project-card">
+            {journeySteps.map((step, index) => <Card key={index} className="project-card">
                 <CardContent className="p-8">
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className={`order-${index % 2 === 0 ? '1' : '2'}`}>
@@ -133,11 +122,9 @@ const ProjectDetails = () => {
                         <div>
                           <h4 className="font-semibold mb-2">Technologies Used:</h4>
                           <div className="flex flex-wrap gap-2">
-                            {step.technologies.map((tech) => (
-                              <Badge key={tech} variant="outline" className="text-xs">
+                            {step.technologies.map(tech => <Badge key={tech} variant="outline" className="text-xs">
                                 {tech}
-                              </Badge>
-                            ))}
+                              </Badge>)}
                           </div>
                         </div>
                         
@@ -167,8 +154,7 @@ const ProjectDetails = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -217,12 +203,8 @@ const ProjectDetails = () => {
       {/* Call to Action */}
       <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Build Your Data Infrastructure?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Let's discuss how we can transform your data chaos into actionable insights
-          </p>
+          
+          
           <div className="flex gap-4 justify-center">
             <Button size="lg" asChild>
               <Link to="/#contact">
@@ -237,8 +219,6 @@ const ProjectDetails = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ProjectDetails;
