@@ -18,7 +18,7 @@ const HeroSection = () => {
           <h2 className="text-xl md:text-2xl text-foreground/90 mb-8 font-medium">
             Analytics & Data Careers
           </h2>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
             My name is Wipas Anantamongkol (Frong), a passionate person about data, insights, and creating meaningful solutions. 
             Specialized in Data Engineering, Data Analytics, and Business Intelligence.
           </p>
