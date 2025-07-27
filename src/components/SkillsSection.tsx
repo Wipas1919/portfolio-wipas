@@ -148,7 +148,7 @@ const SkillsSection = () => {
                 <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>Databricks Data Certification</span>
+                <span>-</span>
                 <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
