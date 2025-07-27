@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 const SkillsSection = () => {
   const skillCategories = [{
-    category: "Data Engineering",
+    category: "Data Engineer & Data SCI",
     skills: [{
       name: "Python",
       experience: "1+ year",
