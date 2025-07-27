@@ -82,7 +82,7 @@ const ContactSection = () => {
                   </div>
                   <h3 className="text-2xl font-bold gradient-text">Connect Online</h3>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-4 my-0">
                   {socialLinks.map((social, index) => <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" style={{
                   animationDelay: `${index * 0.1 + 0.2}s`
                 }} className="group/link flex items-center justify-between p-4 bg-gradient-to-r from-secondary/30 to-secondary/50 hover:from-secondary/50 hover:to-secondary/70 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] animate-fade-in-up py-[15px] my-[17px]">
