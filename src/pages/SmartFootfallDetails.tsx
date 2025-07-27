@@ -249,13 +249,6 @@ const SmartFootfallDetails = () => {
                   <p className="text-muted-foreground">098-958-6430</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 text-left">
-                <MapPin className="w-5 h-5 text-primary" />
-                <div>
-                  <p className="font-semibold">Location</p>
-                  <p className="text-muted-foreground">Bangkok, Thailand</p>
-                </div>
-              </div>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-left">
