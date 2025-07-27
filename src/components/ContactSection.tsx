@@ -131,7 +131,7 @@ const ContactSection = () => {
                   </div>
                   <div className="pt-4">
                     <Button className="w-full glow-effect bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg hover:shadow-xl" asChild>
-                      <a href="/resume.pdf" download className="flex items-center justify-center gap-2">
+                      <a href="https://drive.google.com/uc?export=download&id=1nr7vxlHPDc-FUteRdPjQ_GjWsWU4EdKu" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                         <Download className="w-4 h-4" />
                         <span className="font-semibold">Download PDF</span>
                       </a>
