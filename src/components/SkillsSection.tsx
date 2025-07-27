@@ -62,7 +62,7 @@ const SkillsSection = () => {
       experience: "1+ year",
       level: "intermediate"
     }, {
-      name: "Excel",
+      name: "Automation",
       experience: "1+ year",
       level: "advanced"
     }, {
