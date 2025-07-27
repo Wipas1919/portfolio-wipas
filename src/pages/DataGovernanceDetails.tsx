@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { ArrowLeft, Github, Shield, Users, Database, Settings, Expand } from "lucide-react";
+import { ArrowLeft, Github, Shield, Users, Database, Settings, Expand, Mail, Phone, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import dataGovernanceCover from "@/assets/data-governance-cover.jpg";
@@ -227,26 +227,45 @@ const DataGovernanceDetails = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="max-w-4xl mx-auto text-center">
+      {/* Contact Information */}
+      <section className="px-6 bg-gradient-to-br from-primary/10 to-accent/10 py-[48px]">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Implement Data Governance?
+            Contact Information
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Let's discuss how we can establish robust data governance in your organization
-          </p>
-          <div className="flex gap-4 justify-center">
-            <Button size="lg" asChild>
-              <Link to="/#contact">
-                Get In Touch
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link to="/">
-                View More Projects
-              </Link>
-            </Button>
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-left">
+                <Mail className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">Email</p>
+                  <p className="text-muted-foreground">Wipas.ananta@gmail.com</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <Phone className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">Phone</p>
+                  <p className="text-muted-foreground">098-958-6430</p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-left">
+                <Github className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">GitHub</p>
+                  <p className="text-muted-foreground">@Wipas1919</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <Linkedin className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">LinkedIn</p>
+                  <p className="text-muted-foreground">Wipas Anantamongkol</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

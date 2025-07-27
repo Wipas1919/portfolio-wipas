@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Github, ExternalLink, Clock, Users, Bot, Calculator, TrendingUp, MessageSquare } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, Clock, Users, Bot, Calculator, TrendingUp, MessageSquare, Mail, Phone, Linkedin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import taskManagementIllustration from "@/assets/task-management-illustration.jpg";
 
@@ -250,26 +250,45 @@ const AIAutomationCostEstimationDetails = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      {/* Contact Information */}
+      <section className="px-6 bg-gradient-to-br from-primary/10 to-accent/10 py-[48px]">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to <span className="gradient-text">Optimize</span> Your Automation Costs?
+            Contact Information
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Explore how AI-powered cost estimation can transform your organization's automation strategy
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-              <a href="https://github.com/example/ai-automation-cost-estimation" target="_blank" rel="noopener noreferrer">
-                <Github className="w-4 h-4 mr-2" />
-                View Source Code
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" onClick={() => navigate('/')}>
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Portfolio
-            </Button>
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-left">
+                <Mail className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">Email</p>
+                  <p className="text-muted-foreground">Wipas.ananta@gmail.com</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <Phone className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">Phone</p>
+                  <p className="text-muted-foreground">098-958-6430</p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-left">
+                <Github className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">GitHub</p>
+                  <p className="text-muted-foreground">@Wipas1919</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <Linkedin className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold">LinkedIn</p>
+                  <p className="text-muted-foreground">Wipas Anantamongkol</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
