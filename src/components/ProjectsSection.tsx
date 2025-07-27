@@ -202,12 +202,14 @@ const ProjectsSection = () => {
                               </a>
                             )}
                           </Button>
-                          <Button size="sm" variant="outline" asChild>
-                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                              <Github className="w-3 h-3 mr-1" />
-                              Code
-                            </a>
-                          </Button>
+                          {project.title !== "Data Governance (From scratch)" && (
+                            <Button size="sm" variant="outline" asChild>
+                              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                <Github className="w-3 h-3 mr-1" />
+                                Code
+                              </a>
+                            </Button>
+                          )}
                         </>
                       )}
                     </div>
