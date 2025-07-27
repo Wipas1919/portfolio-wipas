@@ -231,20 +231,20 @@ const SmartFootfallDetails = () => {
       <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Optimize Your Event Analytics?
+            Interested in Smart Analytics Solutions?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Let's discuss how we can implement smart footfall analytics for your venues
+            This footfall dashboard demonstrates real-time event analytics capabilities. Similar solutions can help venues optimize space utilization, improve visitor experience, and make data-driven decisions for event planning and management.
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" asChild>
               <Link to="/#contact">
-                Get In Touch
+                Discuss Your Analytics Needs
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link to="/">
-                View More Projects
+                Explore More Projects
               </Link>
             </Button>
           </div>
