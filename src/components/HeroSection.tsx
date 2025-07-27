@@ -1,11 +1,13 @@
+import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-const HeroSection = () => {
+
+const HeroSection = memo(() => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src={heroBackground} alt="Developer workspace" className="w-full h-full object-cover opacity-40" />
+        <img src={heroBackground} alt="Developer workspace" className="w-full h-full object-cover opacity-40" loading="eager" />
         <div className="absolute inset-0 hero-section" />
       </div>
       
@@ -51,5 +53,7 @@ const HeroSection = () => {
       
       
     </section>;
-};
+});
+
+HeroSection.displayName = 'HeroSection';
 export default HeroSection;

@@ -1,6 +1,8 @@
+import { memo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-const SkillsSection = () => {
+
+const SkillsSection = memo(() => {
   const skillCategories = [{
     category: "Data Engineer & Data SCI",
     skills: [{
@@ -168,5 +170,7 @@ const SkillsSection = () => {
         </div>
       </div>
     </section>;
-};
+});
+
+SkillsSection.displayName = 'SkillsSection';
 export default SkillsSection;

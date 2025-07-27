@@ -1,7 +1,9 @@
+import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Github, Linkedin, Download } from "lucide-react";
-const ContactSection = () => {
+
+const ContactSection = memo(() => {
   const contactInfo = [{
     icon: Mail,
     label: "Email",
@@ -164,5 +166,7 @@ const ContactSection = () => {
         </div>
       </div>
     </section>;
-};
+});
+
+ContactSection.displayName = 'ContactSection';
 export default ContactSection;

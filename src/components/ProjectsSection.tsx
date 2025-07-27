@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Lock } from "lucide-react";
@@ -16,7 +17,7 @@ import {
 import { useState, useEffect } from "react";
 import type { CarouselApi } from "@/components/ui/carousel";
 
-const ProjectsSection = () => {
+const ProjectsSection = memo(() => {
   const [selectedLevel, setSelectedLevel] = useState<'entry' | 'middle' | 'high'>('entry');
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -148,6 +149,7 @@ const ProjectsSection = () => {
                         src={project.imageUrl} 
                         alt={project.title}
                         className={`w-full h-full object-cover transition-transform duration-300 ${project.locked ? 'filter grayscale' : 'hover:scale-105'}`}
+                        loading="lazy"
                       />
                       {project.locked && (
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -250,6 +252,7 @@ const ProjectsSection = () => {
       </div>
     </section>
   );
-};
+});
 
+ProjectsSection.displayName = 'ProjectsSection';
 export default ProjectsSection;

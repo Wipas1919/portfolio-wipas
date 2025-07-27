@@ -1,6 +1,8 @@
+import { memo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Building } from "lucide-react";
-const ExperienceSection = () => {
+
+const ExperienceSection = memo(() => {
   const experiences = [{
     id: 1,
     company: "N.C.C Management and Development (QSNCC)",
@@ -117,5 +119,7 @@ const ExperienceSection = () => {
         </div>
       </div>
     </section>;
-};
+});
+
+ExperienceSection.displayName = 'ExperienceSection';
 export default ExperienceSection;
