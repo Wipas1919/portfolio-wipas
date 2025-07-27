@@ -229,7 +229,7 @@ const SmartFootfallDetails = () => {
 
       {/* Contact Information */}
       <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Contact Information
           </h2>
