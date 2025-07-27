@@ -152,7 +152,7 @@ const SkillsSection = () => {
                 <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>-</span>
+                <span> - </span>
                 <Badge variant="outline">Completed</Badge>
               </div>
             </div>
