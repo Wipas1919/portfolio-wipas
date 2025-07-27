@@ -15,7 +15,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             <span className="gradient-text">PORTFOLIO</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
+          <h2 className="text-xl md:text-2xl text-foreground mb-8 font-medium">
             Analytics & Data Careers
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
