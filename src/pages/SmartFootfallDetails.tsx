@@ -177,7 +177,7 @@ const SmartFootfallDetails = () => {
                 <div className="w-16 h-16 mx-auto mb-4 p-4 rounded-full bg-primary/10 text-primary">
                   <Activity className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">&lt;2s</h3>
+                <h3 className="text-2xl font-bold mb-2">&lt;15 Min</h3>
                 <p className="text-muted-foreground">Real-time Data Processing</p>
               </CardContent>
             </Card>
