@@ -27,6 +27,10 @@ const SkillsSection = () => {
       name: "Data Modeling",
       experience: "1+ year",
       level: "intermediate"
+    }, {
+      name: "AI/ML Solution",
+      experience: "1+ year",
+      level: "basic"
     }]
   }, {
     category: "DevOps & Infrastructure",
