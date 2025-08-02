@@ -175,6 +175,17 @@ const SkillsSection = memo(() => {
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
+              <div className="flex items-center justify-between">
+                <a 
+                  href="https://www.coursera.org/account/accomplishments/verify/9NSBY3ZKDYZA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Business Analysis Fundamentals
+                </a>
+                <Badge variant="default">Completed</Badge>
+              </div>
               
             </div>
           </div>
