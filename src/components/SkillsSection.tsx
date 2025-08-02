@@ -154,8 +154,15 @@ const SkillsSection = memo(() => {
                 <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>Certified Professional Data Analyst</span>
-                <Badge variant="outline">In Progress</Badge>
+                <a 
+                  href="https://badgr.com/public/assertions/eWbZM16dQ8CgM-SnE_jVeg?identity__email=wipas2526@gmail.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Certified Professional Data Analyst
+                </a>
+                <Badge variant="default">Completed</Badge>
               </div>
               
             </div>
