@@ -2,7 +2,6 @@ import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-
 const HeroSection = memo(() => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -17,13 +16,8 @@ const HeroSection = memo(() => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             <span className="gradient-text">PORTFOLIO</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-foreground/90 mb-8 font-medium">
-            Analytics & Data Careers
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            My name is Wipas Anantamongkol (Frong), a passionate person about data, insights, and creating meaningful solutions. 
-            Specialized in Data Engineering, Data Analytics, and Business Intelligence.
-          </p>
+          <h2 className="text-xl md:text-2xl text-foreground/90 mb-8 font-medium">Data Careers</h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">I’m Wipas Anantamongkol (Frong) — a data-driven professional passionate about transforming data into meaningful solutions.</p>
         </div>
         
         
@@ -54,6 +48,5 @@ const HeroSection = memo(() => {
       
     </section>;
 });
-
 HeroSection.displayName = 'HeroSection';
 export default HeroSection;
