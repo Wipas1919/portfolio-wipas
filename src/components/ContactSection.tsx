@@ -2,7 +2,6 @@ import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Github, Linkedin, Download } from "lucide-react";
-
 const ContactSection = memo(() => {
   const contactInfo = [{
     icon: Mail,
@@ -121,14 +120,10 @@ const ContactSection = memo(() => {
                 </div>
                 <div className="space-y-5 my-0">
                   <div className="flex items-center gap-4 animate-fade-in-up">
-                    <div className="p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <Download className="w-5 h-5 text-primary" />
-                    </div>
+                    
                     <div className="flex-1">
-                      <div className="font-semibold text-foreground py-[6px]">Professional Resume</div>
-                      <div className="text-muted-foreground my-[12px]">Complete experience & qualifications
-
-                    </div>
+                      <div className="font-semibold text-foreground py-[6px]">Download my resume below</div>
+                      
                     </div>
                   </div>
                   <div className="pt-4">
@@ -167,6 +162,5 @@ const ContactSection = memo(() => {
       </div>
     </section>;
 });
-
 ContactSection.displayName = 'ContactSection';
 export default ContactSection;
