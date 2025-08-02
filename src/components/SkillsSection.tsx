@@ -132,7 +132,7 @@ const SkillsSection = memo(() => {
         {/* Certifications & Learning */}
         <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up">
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">                           Cloud Certifications </h3>
+            <h3 className="text-xl font-bold mb-4">                            Cloud Certifications </h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span>Google Cloud Certificate</span>
@@ -147,63 +147,38 @@ const SkillsSection = memo(() => {
           </div>
           
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">                                         Other Certifications </h3>
+            <h3 className="text-xl font-bold mb-4">                                 Other Certifications </h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span>Power Bi Certificate PL-300</span>
                 <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <a 
-                  href="https://badgr.com/public/assertions/eWbZM16dQ8CgM-SnE_jVeg?identity__email=wipas2526@gmail.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
+                <a href="https://badgr.com/public/assertions/eWbZM16dQ8CgM-SnE_jVeg?identity__email=wipas2526@gmail.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Certified Professional Data Analyst
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <a 
-                  href="https://www.coursera.org/account/accomplishments/verify/EG9R3LHKEXH5" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
+                <a href="https://www.coursera.org/account/accomplishments/verify/EG9R3LHKEXH5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Requirements Gathering in Business Analysis
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <a 
-                  href="https://www.coursera.org/account/accomplishments/verify/9NSBY3ZKDYZA" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
+                <a href="https://www.coursera.org/account/accomplishments/verify/9NSBY3ZKDYZA" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Business Analysis Fundamentals
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <a 
-                  href="https://graphacademy.neo4j.com/c/64b9d65d-f0f6-44c9-ac3c-04e23a45c918/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
+                <a href="https://graphacademy.neo4j.com/c/64b9d65d-f0f6-44c9-ac3c-04e23a45c918/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Neo4j Graph Data Science Certification
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <a 
-                  href="https://learn.mongodb.com/c/ExRTEyFgSf-f_lPeX3-noQ" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
+                <a href="https://learn.mongodb.com/c/ExRTEyFgSf-f_lPeX3-noQ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   MongoDB for SQL Experts
                 </a>
                 <Badge variant="default">Completed</Badge>
