@@ -186,6 +186,17 @@ const SkillsSection = memo(() => {
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
+              <div className="flex items-center justify-between">
+                <a 
+                  href="https://graphacademy.neo4j.com/c/64b9d65d-f0f6-44c9-ac3c-04e23a45c918/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Neo4j Graph Data Science Certification
+                </a>
+                <Badge variant="default">Completed</Badge>
+              </div>
               
             </div>
           </div>
