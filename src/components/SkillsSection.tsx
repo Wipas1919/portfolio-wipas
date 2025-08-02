@@ -197,6 +197,17 @@ const SkillsSection = memo(() => {
                 </a>
                 <Badge variant="default">Completed</Badge>
               </div>
+              <div className="flex items-center justify-between">
+                <a 
+                  href="https://learn.mongodb.com/c/ExRTEyFgSf-f_lPeX3-noQ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  MongoDB for SQL Experts
+                </a>
+                <Badge variant="default">Completed</Badge>
+              </div>
               
             </div>
           </div>
