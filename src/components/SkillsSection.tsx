@@ -153,7 +153,10 @@ const SkillsSection = memo(() => {
                 <span>Power Bi Certificate PL-300</span>
                 <Badge variant="outline">In Progress</Badge>
               </div>
-              
+              <div className="flex items-center justify-between">
+                <span>Certified Professional Data Analyst</span>
+                <Badge variant="outline">In Progress</Badge>
+              </div>
               
             </div>
           </div>
