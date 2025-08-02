@@ -1,7 +1,6 @@
 import { memo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-
 const SkillsSection = memo(() => {
   const skillCategories = [{
     category: "Data Engineer & Data SCI",
@@ -140,13 +139,10 @@ const SkillsSection = memo(() => {
                 <Badge variant="outline">In Progress</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span>Aws Cloud Certified Data Engineer</span>
+                <span>Azure Cloud Certified</span>
                 <Badge variant="outline">In Progress</Badge>
               </div>
-              <div className="flex items-center justify-between">
-                <span>Azure Cloud Certification</span>
-                <Badge variant="outline">In Progress</Badge>
-              </div>
+              
             </div>
           </div>
           
@@ -157,20 +153,13 @@ const SkillsSection = memo(() => {
                 <span>Power Bi Certificate PL-300</span>
                 <Badge variant="outline">In Progress</Badge>
               </div>
-              <div className="flex items-center justify-between">
-                <span>-</span>
-                <Badge variant="outline">In Progress</Badge>
-              </div>
-              <div className="flex items-center justify-between">
-                <span> - </span>
-                <Badge variant="outline">Completed</Badge>
-              </div>
+              
+              
             </div>
           </div>
         </div>
       </div>
     </section>;
 });
-
 SkillsSection.displayName = 'SkillsSection';
 export default SkillsSection;
