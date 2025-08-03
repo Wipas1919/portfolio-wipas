@@ -93,7 +93,7 @@ const ContactSection = memo(() => {
                         </div>
                         <div>
                           <div className="font-semibold text-foreground">{social.name}</div>
-                          <div className="text-sm text-muted-foreground">{social.username}</div>
+                          <div className="text-sm text-muted-foreground my-[4px]">{social.username}</div>
                         </div>
                       </div>
                       <Badge variant="outline" className="group-hover/link:border-primary group-hover/link:bg-primary/10 transition-all duration-300">
@@ -110,7 +110,7 @@ const ContactSection = memo(() => {
           animationDelay: '0.2s'
         }}>
             <div className="relative bg-gradient-to-br from-card via-card to-accent/20 border border-border/50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 my-[2px] py-0" />
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-0 my-[3px]" />
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-primary/10 rounded-lg">
@@ -122,8 +122,9 @@ const ContactSection = memo(() => {
                   <div className="flex items-center gap-4 animate-fade-in-up">
                     
                     <div className="flex-1">
-                      <div className="font-semibold text-foreground py-[6px]">Download my resume 
-(for a detailed overview of my qualifications and career journey).</div>
+                      <div className="font-semibold text-foreground py-[6px]">
+
+Download my resume  (for a detailed overview of my qualifications and career journey).</div>
                       
                     </div>
                   </div>
