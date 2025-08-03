@@ -122,7 +122,8 @@ const ContactSection = memo(() => {
                   <div className="flex items-center gap-4 animate-fade-in-up">
                     
                     <div className="flex-1">
-                      <div className="font-semibold text-foreground py-[6px]">Download my resume below</div>
+                      <div className="font-semibold text-foreground py-[6px]">Download my resume 
+(for a detailed overview of my qualifications and career journey).</div>
                       
                     </div>
                   </div>

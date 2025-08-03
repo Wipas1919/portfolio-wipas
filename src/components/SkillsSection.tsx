@@ -132,7 +132,7 @@ const SkillsSection = memo(() => {
         {/* Certifications & Learning */}
         <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up">
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">                            Cloud Certifications </h3>
+            <h3 className="text-xl font-bold mb-4">                                       Cloud Certifications </h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span>Google Cloud Certificate</span>
@@ -147,7 +147,7 @@ const SkillsSection = memo(() => {
           </div>
           
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">                                 Other Certifications </h3>
+            <h3 className="text-xl font-bold mb-4">                                         Other Certifications </h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span>Power Bi Certificate PL-300</span>
