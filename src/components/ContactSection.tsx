@@ -152,7 +152,7 @@ const ContactSection = memo(() => {
         <div className="mt-12 text-center animate-fade-in-up">
           <h4 className="text-xl font-semibold mb-6">I'm interested in:</h4>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Data Engineering Solutions", "Business Intelligence Dashboards", "Data Analytics Projects", "ETL/ELT Pipeline Development", "Statistical Analysis", "Data Visualization", "Business Analytics Consulting", "Data-driven Decision Making", "Data Science"].map((type, index) => <Badge key={type} variant="secondary" className="skill-badge px-4 py-2 animate-fade-in-up" style={{
+            {["Data Engineering Solutions", "Business Intelligence Dashboards", "Data Analytics Projects", "ETL/ELT Pipeline Development", "Statistical Analysis", "Data Visualization", "Business Analytics Consulting", "Data-driven Decision Making", "Data Science", "AI/ML Solutions"].map((type, index) => <Badge key={type} variant="secondary" className="skill-badge px-4 py-2 animate-fade-in-up" style={{
             animationDelay: `${index * 0.1}s`
           }}>
                 {type}
