@@ -187,7 +187,7 @@ const SmartFootfallDetails = () => {
                 <div className="w-16 h-16 mx-auto mb-4 p-4 rounded-full bg-accent/10 text-accent">
                   <Users className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Real Time Tracking</h3>
+                <h3 className="text-2xl font-bold mb-2">Near Real Time Tracking</h3>
                 <p className="text-muted-foreground">Visitors Tracked Simultaneously</p>
               </CardContent>
             </Card>
@@ -198,7 +198,7 @@ const SmartFootfallDetails = () => {
                   <TrendingUp className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">95%</h3>
-                <p className="text-muted-foreground">Accuracy in Crowd Prediction</p>
+                <p className="text-muted-foreground">Accuracy</p>
               </CardContent>
             </Card>
           </div>
