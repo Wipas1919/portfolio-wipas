@@ -67,7 +67,7 @@ const ProjectsSection = memo(() => {
     {
       id: 5,
       title: "AI - Automation Cost Estimation",
-      description: "Automation cost sheet exhibition using Dify AI with interactive chat interface for best results. This project helps employees optimize time spending on tasks, saving approximately 1 FTE through intelligent automation cost analysis.",
+      description: "AI-powered cost sheet automation system with 6-step workflow: 1) Upload 3D/Perspective files to chat, 2) LLM data extraction processing, 3) Knowledge retrieval integration, 4) Automated price filling, 5) Excel file generation, 6) Download delivery via chat interface.",
       technologies: ["AI Integration", "Process Optimization", "Cost-Benefit Analysis", "Productivity Enhancement", "ROI Calculation"],
       demoUrl: "/project/ai-automation-cost-estimation",
       githubUrl: "https://github.com/Wipas1919/costsheet-excel",
