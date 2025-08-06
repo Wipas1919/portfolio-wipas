@@ -70,7 +70,7 @@ const ProjectsSection = memo(() => {
       description: "Automation cost sheet exhibition using Dify AI with interactive chat interface for best results. This project helps employees optimize time spending on tasks, saving approximately 1 FTE through intelligent automation cost analysis.",
       technologies: ["AI Integration", "Process Optimization", "Cost-Benefit Analysis", "Productivity Enhancement", "ROI Calculation"],
       demoUrl: "/project/ai-automation-cost-estimation",
-      githubUrl: "https://github.com/example/ai-automation-cost-estimation",
+      githubUrl: "https://github.com/Wipas1919/costsheet-excel",
       imageUrl: aiAutomationCost,
       level: 'entry' as const
     }
