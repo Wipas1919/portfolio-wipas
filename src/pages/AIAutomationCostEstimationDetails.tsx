@@ -119,7 +119,7 @@ const AIAutomationCostEstimationDetails = () => {
                 </div>
                 <div className="flex gap-4">
                   <Button size="lg" asChild>
-                    <a href="https://github.com/example/ai-automation-cost-estimation" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Wipas1919/costsheet-excel" target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" />
                       View Code
                     </a>
