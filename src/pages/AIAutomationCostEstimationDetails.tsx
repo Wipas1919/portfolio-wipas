@@ -125,7 +125,7 @@ const AIAutomationCostEstimationDetails = () => {
                     </a>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <a href="https://drive.google.com/file/d/1MgJvytlhhhxGODvJ5zaZmFivprWW-ijs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/14D1IMLucOdCYxnngrh6xpU7qmRRi9CLJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </a>
