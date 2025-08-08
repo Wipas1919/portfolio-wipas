@@ -30,7 +30,7 @@ const ProjectsSection = memo(() => {
       description: "Complete data engineering pipeline implementation from scratch featuring data ingestion, ETL/ELT processing, data warehousing with dimensional modeling, real-time stream processing, and interactive BI dashboards. Demonstrates modern data architecture patterns and best practices.",
       technologies: ["Apache Airflow", "dbt", "Snowflake", "Kafka", "Docker", "Python", "SQL", "Tableau"],
       demoUrl: "/project/data-engineering-journey",
-      githubUrl: "https://github.com/Wipas1919/data-engineering-journey",
+      githubUrl: "https://github.com/Wipas1919/End-to-End-DE",
       imageUrl: dataEngineeringFilter,
       level: 'entry' as const
     },
