@@ -27,7 +27,7 @@ const ProjectsSection = memo(() => {
     {
       id: 1,
       title: "End to End Data Engineering Journey (From scratch)",
-      description: "Complete data engineering pipeline implementation from scratch featuring: data ingestion layer, ETL/ELT processing, data warehousing with dimensional modeling, real-time stream processing, data quality monitoring, and interactive BI dashboards. Demonstrates modern data architecture patterns and best practices.",
+      description: "Complete data engineering pipeline implementation from scratch featuring data ingestion, ETL/ELT processing, data warehousing with dimensional modeling, real-time stream processing, and interactive BI dashboards. Demonstrates modern data architecture patterns and best practices.",
       technologies: ["Apache Airflow", "dbt", "Snowflake", "Kafka", "Docker", "Python", "SQL", "Tableau"],
       demoUrl: "/project/data-engineering-journey",
       githubUrl: "https://github.com/Wipas1919/data-engineering-journey",
@@ -37,7 +37,7 @@ const ProjectsSection = memo(() => {
     {
       id: 2,
       title: "Data Governance (From scratch)",
-      description: "Comprehensive data governance framework built with OpenMetadata platform. Implements data cataloging, lineage tracking, data quality rules, metadata management, and stakeholder collaboration workflows. Establishes data ownership policies and automated governance processes.",
+      description: "Comprehensive data governance framework built with OpenMetadata platform. Implements data cataloging, lineage tracking, data quality rules, metadata management, and stakeholder collaboration workflows for automated governance processes.",
       technologies: ["OpenMetadata", "Data Cataloging", "Apache Atlas", "Great Expectations", "Data Quality", "Policy Management"],
       demoUrl: "/project/data-governance",
       githubUrl: "https://github.com/Wipas1919/data-governance-framework",
@@ -47,7 +47,7 @@ const ProjectsSection = memo(() => {
     {
       id: 3,
       title: "Smart Footfall Dashboard",
-      description: "Real-time visitor analytics platform for multi-day events featuring: IoT sensor data ingestion, stream processing with Apache Kafka, crowd density analysis, heat mapping visualization, and predictive traffic modeling. Provides actionable insights for event management and space optimization.",
+      description: "Real-time visitor analytics platform for multi-day events featuring IoT sensor data ingestion, stream processing with Apache Kafka, crowd density analysis, and heat mapping visualization. Provides actionable insights for event management optimization.",
       technologies: ["Apache Kafka", "InfluxDB", "Grafana", "Python", "IoT Sensors", "Time Series Analysis", "Machine Learning"],
       demoUrl: "/project/smart-footfall-dashboard",
       githubUrl: "https://github.com/Wipas1919/smart-footfall-analytics",
@@ -57,7 +57,7 @@ const ProjectsSection = memo(() => {
     {
       id: 4,
       title: "Internal Tech Talk & Workshop - And Power BI Training",
-      description: "Comprehensive internal training program featuring: emerging technology trends presentation, hands-on Power BI workshop curriculum, self-service analytics enablement, data literacy training modules, and organizational change management for data-driven culture transformation.",
+      description: "Comprehensive internal training program featuring emerging technology trends presentation, hands-on Power BI workshop curriculum, self-service analytics enablement, and data literacy training modules for organizational transformation.",
       technologies: ["Power BI", "Training Design", "Data Literacy", "Workshop Facilitation", "Change Management", "Technical Presentation"],
       demoUrl: "/project/tech-talk-workshop",
       githubUrl: "https://github.com/Wipas1919/powerbi-training-materials",
@@ -67,7 +67,7 @@ const ProjectsSection = memo(() => {
     {
       id: 5,
       title: "AI - Automation Cost Estimation",
-      description: "AI-powered cost sheet automation system with 6-step workflow: 1) Upload 3D/Perspective files to chat, 2) LLM data extraction processing, 3) Knowledge retrieval integration, 4) Automated price filling, 5) Excel file generation, 6) Download delivery via chat interface.",
+      description: "AI-powered cost sheet automation system with streamlined workflow featuring file upload processing, LLM data extraction, knowledge retrieval integration, automated price filling, and Excel file generation for efficient cost estimation.",
       technologies: ["AI Integration", "Process Optimization", "Cost-Benefit Analysis", "Productivity Enhancement", "ROI Calculation"],
       demoUrl: "/project/ai-automation-cost-estimation",
       githubUrl: "https://github.com/Wipas1919/costsheet-excel",
