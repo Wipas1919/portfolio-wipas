@@ -181,7 +181,7 @@ const ProjectsSection = memo(() => {
                           </a>
                         )}
                       </Button>
-                      {!["Data Governance (From scratch)", "Smart Footfall Dashboard", "Internal Tech Talk & Workshop - And Power Bi Training"].includes(project.title) && (
+                      {!["Data Governance (From scratch)", "Smart Footfall Dashboard", "Internal Tech Talk & Workshop - And Power BI Training"].includes(project.title) && (
                         <Button size="sm" variant="outline" asChild>
                           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                             <Github className="w-3 h-3 mr-1" />
