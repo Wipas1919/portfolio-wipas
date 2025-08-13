@@ -28,7 +28,7 @@ const ProjectsSection = memo(() => {
       id: 1,
       title: "End to End Data Engineering Journey (From scratch)",
       description: "Complete data engineering pipeline implementation from scratch featuring data ingestion, ETL/ELT processing, data warehousing with dimensional modeling, real-time stream processing, and interactive BI dashboards. Demonstrates modern data architecture patterns and best practices.",
-      technologies: ["Apache Airflow", "dbt", "Snowflake", "Kafka", "Docker", "Python", "SQL", "Tableau"],
+      technologies: ["Windmill", "MySQL", "InfluxDB", "MinIO", "Open Metadata", "Microsoft Fabric", "Power BI", "Grafana", "Docker", "Python", "Nocobase", "Kong API", "Prometheus"],
       demoUrl: "/project/data-engineering-journey",
       githubUrl: "https://github.com/Wipas1919/End-to-End-DE",
       imageUrl: dataEngineeringFilter,
