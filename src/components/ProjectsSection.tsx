@@ -48,7 +48,7 @@ const ProjectsSection = memo(() => {
       id: 3,
       title: "Smart Footfall Dashboard",
       description: "Real-time visitor analytics platform for multi-day events featuring IoT sensor data ingestion, stream processing with Apache Kafka, crowd density analysis, and heat mapping visualization. Provides actionable insights for event management optimization.",
-      technologies: ["Apache Kafka", "InfluxDB", "Grafana", "Python", "IoT Sensors", "Time Series Analysis", "Machine Learning"],
+      technologies: ["InfluxDB", "Grafana", "Python", "IoT Sensors", "Time Series Analysis", "Power BI", "DAX"],
       demoUrl: "/project/smart-footfall-dashboard",
       githubUrl: "https://github.com/Wipas1919/smart-footfall-analytics",
       imageUrl: taskManagementIllustration,
